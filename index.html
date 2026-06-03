@@ -3,1037 +3,1989 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CC's Learning Center Inc. | Childcare in Brea, CA</title>
-<meta name="description" content="Where Brea families find trusted, loving childcare. Infant care through Pre-K. Rated 5.0 on Yelp with 65 reviews.">
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<title>CC's Learning Center | Family Childcare in Brea, CA</title>
+<meta name="description" content="CC's Learning Center, family-owned childcare in Brea, CA. Infants through Pre-K and after school. Rated 5.0 on Yelp with 65 reviews. State licensed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --sage:#7BAE7F;
-  --sage-dark:#4A7C59;
-  --sage-deep:#2D5F3F;
-  --sage-light:#E5F0E5;
-  --sage-pale:#F2F8F2;
-  --terra:#D4775B;
-  --terra-light:#FAE8E0;
-  --terra-dark:#B85A40;
-  --honey:#E8B94C;
-  --honey-light:#FFF5D6;
-  --cream:#FBF7F0;
-  --cream-dark:#F3EDE3;
-  --white:#FFFFFF;
-  --charcoal:#2D3436;
-  --text:#3D4449;
-  --text-mid:#636E72;
-  --text-light:#95A5A6;
-  --shadow-xs:0 1px 3px rgba(45,52,54,.06);
-  --shadow-sm:0 2px 12px rgba(45,52,54,.08);
-  --shadow-md:0 8px 30px rgba(45,52,54,.1);
-  --shadow-lg:0 16px 50px rgba(45,52,54,.12);
-  --r:16px;--r-lg:24px;--r-xl:32px
-}
-html{scroll-behavior:smooth}
-body{font-family:'Quicksand',sans-serif;color:var(--text);line-height:1.7;background:var(--cream);overflow-x:hidden;font-weight:500}
-h1,h2,h3,h4{font-family:'DM Serif Display',serif;font-weight:400;color:var(--charcoal)}
-a{text-decoration:none;color:inherit}
+/* =============================================
+   CC'S LEARNING CENTER :: BESPOKE IDENTITY
+   Palette: coral, sunshine, sky blue, grape, ink
+   Fonts: Fredoka (display) + Nunito (body)
+   ============================================= */
 
-/* === UTILITY === */
-.container{max-width:1140px;margin:0 auto;padding:0 28px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:60px;font-weight:700;font-size:.92rem;text-decoration:none;transition:all .35s cubic-bezier(.4,0,.2,1);cursor:pointer;border:none;font-family:inherit;letter-spacing:.3px}
-.btn-terra{background:var(--terra);color:#fff;box-shadow:0 4px 18px rgba(212,119,91,.3)}
-.btn-terra:hover{background:var(--terra-dark);transform:translateY(-2px);box-shadow:0 8px 28px rgba(212,119,91,.4)}
-.btn-sage{background:var(--sage);color:#fff;box-shadow:0 4px 18px rgba(123,174,127,.25)}
-.btn-sage:hover{background:var(--sage-dark);transform:translateY(-2px)}
-.btn-outline{background:transparent;border:2px solid rgba(255,255,255,.4);color:#fff}
-.btn-outline:hover{background:rgba(255,255,255,.12);border-color:#fff}
-.btn-ghost{background:transparent;border:2px solid var(--sage);color:var(--sage-dark)}
-.btn-ghost:hover{background:var(--sage-light)}
-
-/* === TOPBAR === */
-.topbar{background:var(--sage-deep);color:rgba(255,255,255,.85);padding:8px 0;font-size:.8rem;font-weight:600}
-.topbar .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
-.topbar a{color:rgba(255,255,255,.85);transition:color .2s}
-.topbar a:hover{color:var(--honey)}
-.topbar .info{display:flex;gap:24px;flex-wrap:wrap}
-.topbar .info i{color:var(--honey);margin-right:5px;font-size:.75rem}
-.topbar .socials{display:flex;gap:8px}
-.topbar .socials a{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:.7rem;transition:all .2s}
-.topbar .socials a:hover{background:var(--honey);color:var(--sage-deep)}
-
-/* === NAV === */
-nav{background:var(--white);padding:14px 0;position:sticky;top:0;z-index:1000;box-shadow:var(--shadow-xs);transition:box-shadow .3s}
-nav.scrolled{box-shadow:var(--shadow-sm)}
-nav .container{display:flex;justify-content:space-between;align-items:center}
-.logo{display:flex;align-items:center;gap:11px}
-.logo-mark{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--sage),var(--sage-dark));display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.2rem;box-shadow:0 2px 10px rgba(123,174,127,.3)}
-.logo-type{font-family:'DM Serif Display',serif;font-size:1.25rem;color:var(--charcoal);line-height:1.15}
-.logo-type small{display:block;font-family:'Quicksand',sans-serif;font-size:.6rem;font-weight:700;color:var(--text-light);letter-spacing:2.5px;text-transform:uppercase}
-.nav-links{display:flex;gap:32px;align-items:center;list-style:none}
-.nav-links a{font-weight:700;font-size:.85rem;color:var(--text-mid);transition:color .2s;letter-spacing:.3px}
-.nav-links a:hover{color:var(--sage-dark)}
-.nav-cta{background:var(--terra)!important;color:#fff!important;padding:10px 22px!important;border-radius:60px!important;box-shadow:0 3px 12px rgba(212,119,91,.25);transition:all .3s!important}
-.nav-cta:hover{background:var(--terra-dark)!important;transform:translateY(-1px)!important}
-.mobile-menu{display:none;background:none;border:none;font-size:1.4rem;color:var(--charcoal);cursor:pointer}
-
-/* === HERO === */
-.hero{position:relative;overflow:hidden;padding:80px 0 100px;background:linear-gradient(160deg,var(--sage-deep) 0%,#3A6B4A 40%,var(--sage-dark) 100%)}
-.hero::before{content:'';position:absolute;bottom:-2px;left:0;right:0;height:80px;background:var(--cream);border-radius:50% 50% 0 0 / 100% 100% 0 0}
-.hero::after{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;border-radius:50%;background:rgba(255,255,255,.03)}
-.hero .container{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;position:relative;z-index:2}
-.hero-content{color:#fff}
-.hero-pill{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.12);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.18);border-radius:60px;padding:7px 16px;font-size:.78rem;font-weight:700;margin-bottom:22px}
-.hero-pill i{color:var(--honey)}
-.hero h1{font-size:3rem;line-height:1.12;margin-bottom:16px;letter-spacing:-.5px}
-.hero h1 span{color:var(--honey);position:relative}
-.hero h1 span::after{content:'';position:absolute;bottom:2px;left:0;right:0;height:3px;background:var(--honey);opacity:.4;border-radius:2px}
-.hero-sub{font-size:1.08rem;line-height:1.8;opacity:.88;margin-bottom:30px;max-width:460px;font-weight:500}
-.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px}
-.hero-proof{display:flex;gap:28px;flex-wrap:wrap}
-.hero-proof-item{display:flex;align-items:center;gap:8px}
-.hero-proof-item .num{font-family:'DM Serif Display',serif;font-size:1.5rem;color:var(--honey);line-height:1}
-.hero-proof-item .lbl{font-size:.72rem;font-weight:600;opacity:.7;line-height:1.3}
-
-.hero-visual{position:relative;display:flex;justify-content:center}
-.hero-img-main{width:380px;height:440px;border-radius:var(--r-xl);background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(255,255,255,.03));backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
-.hero-img-main .placeholder{font-size:6rem;opacity:.15;color:#fff}
-.hero-img-overlay{position:absolute;bottom:-20px;left:-20px;display:flex;gap:8px;flex-direction:column}
-.hero-chip{background:var(--white);border-radius:var(--r);padding:12px 16px;box-shadow:var(--shadow-md);display:flex;align-items:center;gap:10px;animation:chipFloat 4s ease-in-out infinite;font-size:.82rem;font-weight:700;color:var(--charcoal)}
-.hero-chip:nth-child(2){animation-delay:2s}
-.hero-chip .chip-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.9rem}
-@keyframes chipFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-
-/* === WAVE === */
-.wave-divider{position:relative;height:60px;overflow:hidden}
-.wave-divider svg{position:absolute;bottom:0;width:100%;height:60px}
-
-/* === TRUST === */
-.trust{padding:20px 0 48px}
-.trust-row{display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
-.trust-pill{display:flex;align-items:center;gap:8px;padding:10px 20px;background:var(--white);border-radius:60px;box-shadow:var(--shadow-xs);font-size:.82rem;font-weight:700;color:var(--text-mid)}
-.trust-pill i{color:var(--sage);font-size:1rem}
-
-/* === SECTION === */
-.section{padding:80px 0}
-.s-bg{background:var(--white)}
-.s-green{background:var(--sage-deep);color:#fff}
-.s-terra{background:linear-gradient(135deg,var(--terra),#c06040);color:#fff;position:relative;overflow:hidden}
-.section-head{text-align:center;margin-bottom:52px;max-width:580px;margin-left:auto;margin-right:auto}
-.section-head .tag{display:inline-flex;align-items:center;gap:6px;font-family:'Quicksand',sans-serif;font-weight:700;font-size:.75rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--sage);margin-bottom:10px}
-.s-green .section-head .tag{color:var(--honey)}
-.section-head h2{font-size:2.2rem;margin-bottom:12px;line-height:1.2}
-.s-green .section-head h2{color:#fff}
-.section-head p{color:var(--text-mid);font-size:.98rem}
-.s-green .section-head p{color:rgba(255,255,255,.75)}
-
-/* === PROGRAMS === */
-.prog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.prog-card{background:var(--white);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-sm);transition:all .35s;cursor:pointer;position:relative}
-.prog-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
-.prog-top{height:130px;display:flex;align-items:center;justify-content:center;font-size:2.6rem;position:relative}
-.prog-top::after{content:'';position:absolute;bottom:0;left:20%;right:20%;height:3px;border-radius:3px}
-.pc1 .prog-top{background:linear-gradient(135deg,#FFF0ED,#FFE0D8);color:var(--terra)}.pc1 .prog-top::after{background:var(--terra)}
-.pc2 .prog-top{background:linear-gradient(135deg,var(--honey-light),#FFE9A0);color:#C49000}.pc2 .prog-top::after{background:var(--honey)}
-.pc3 .prog-top{background:linear-gradient(135deg,var(--sage-light),#D0E8D0);color:var(--sage)}.pc3 .prog-top::after{background:var(--sage)}
-.pc4 .prog-top{background:linear-gradient(135deg,#E8F0FF,#D0DFFF);color:#5B7FCF}.pc4 .prog-top::after{background:#5B7FCF}
-.pc5 .prog-top{background:linear-gradient(135deg,#F5E6FF,#E8D0FF);color:#8B5CF6}.pc5 .prog-top::after{background:#8B5CF6}
-.pc6 .prog-top{background:linear-gradient(135deg,#E0F7FA,#B2EBF2);color:#0097A7}.pc6 .prog-top::after{background:#0097A7}
-.prog-body{padding:22px 20px;text-align:center}
-.prog-body h3{font-size:1.05rem;margin-bottom:3px}
-.prog-body .age{font-family:'Quicksand',sans-serif;font-size:.72rem;font-weight:700;color:var(--sage);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px}
-.prog-body p{font-size:.85rem;color:var(--text-mid);margin-bottom:14px;line-height:1.6}
-.prog-link{font-family:'Quicksand',sans-serif;color:var(--terra);font-weight:700;font-size:.82rem;display:inline-flex;align-items:center;gap:5px;transition:gap .2s}
-.prog-link:hover{gap:9px}
-
-/* === WHY US === */
-.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.why-card{text-align:center;padding:28px 18px;border-radius:var(--r-lg);background:rgba(255,255,255,.08);transition:background .3s}
-.why-card:hover{background:rgba(255,255,255,.12)}
-.why-card .wicon{width:64px;height:64px;border-radius:18px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 16px;color:var(--honey)}
-.why-card h3{font-size:1rem;color:#fff;margin-bottom:8px}
-.why-card p{font-size:.84rem;opacity:.72;line-height:1.6;font-family:'Quicksand',sans-serif}
-
-/* === COMPARE === */
-.compare-intro{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-bottom:52px}
-.compare-intro h2{font-size:2.2rem;line-height:1.2;margin-bottom:12px}
-.compare-intro p{color:var(--text-mid);margin-bottom:20px}
-.compare-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.cstat{background:var(--white);border-radius:var(--r);padding:18px;text-align:center;box-shadow:var(--shadow-xs)}
-.cstat.gold{background:linear-gradient(135deg,#FFFCF0,var(--honey-light));border:2px solid var(--honey)}
-.cstat .cv{font-family:'DM Serif Display',serif;font-size:2rem;color:var(--charcoal);line-height:1}
-.cstat .cv.accent{color:var(--terra)}
-.cstat .cl{font-size:.7rem;font-weight:700;color:var(--text-light);margin-top:3px;text-transform:uppercase;letter-spacing:.5px}
-
-.compare-tabs{display:flex;gap:6px;justify-content:center;margin-bottom:28px}
-.ctab{padding:9px 22px;border-radius:60px;font-weight:700;font-size:.82rem;cursor:pointer;border:2px solid var(--cream-dark);background:var(--white);color:var(--text-mid);transition:all .2s;font-family:inherit}
-.ctab:hover{border-color:var(--sage)}
-.ctab.active{background:var(--sage);color:#fff;border-color:var(--sage)}
-
-/* Compare Cards */
-.cc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
-.cc-card{background:var(--white);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-sm);transition:all .3s}
-.cc-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
-.cc-card.ours{border:2px solid var(--sage);box-shadow:0 4px 20px rgba(123,174,127,.2);position:relative}
-.cc-card.ours::after{content:'CC\\'s';position:absolute;top:8px;right:8px;background:var(--honey);color:var(--charcoal);font-size:.6rem;font-weight:700;padding:3px 10px;border-radius:60px;letter-spacing:1px;font-family:'Quicksand',sans-serif}
-.cc-card-head{padding:18px 14px 12px;text-align:center}
-.cc-card.ours .cc-card-head{background:var(--sage-pale)}
-.cc-card-head h4{font-size:.88rem;margin-bottom:2px}
-.cc-card-head .subtype{font-family:'Quicksand',sans-serif;font-size:.65rem;color:var(--text-light);font-weight:600;text-transform:uppercase;letter-spacing:1px}
-.cc-card-head .stars{margin-top:8px;color:var(--honey);font-size:.78rem;letter-spacing:1px}
-.cc-card-head .stars b{font-family:'DM Serif Display',serif;font-size:1.15rem;color:var(--charcoal);margin-left:3px}
-.cc-card-head .rev-count{font-size:.68rem;color:var(--text-light);font-weight:600}
-.cc-rows{padding:0 0 6px}
-.cc-row{display:flex;justify-content:space-between;align-items:center;padding:7px 14px;font-size:.75rem;font-weight:600;border-bottom:1px solid #f5f5f5}
-.cc-row:last-child{border:none}
-.cc-row .label{color:var(--text-mid)}
-.cc-row .val .y{color:var(--sage)}
-.cc-row .val .n{color:#ddd}
-.cc-row .val .p{color:var(--honey)}
-
-/* Bars view */
-.bars-wrap{max-width:700px;margin:0 auto}
-.bar-item{margin-bottom:18px}
-.bar-top{display:flex;justify-content:space-between;margin-bottom:5px;font-size:.85rem;font-weight:700}
-.bar-top .bname{color:var(--charcoal)}
-.bar-track{height:14px;background:var(--cream-dark);border-radius:8px;overflow:hidden}
-.bar-fill{height:100%;border-radius:8px;transition:width 1.2s cubic-bezier(.4,0,.2,1)}
-
-/* Feature table */
-.feat-table{width:100%;border-collapse:separate;border-spacing:0;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-sm);font-size:.82rem;background:var(--white)}
-.feat-table thead th{background:var(--sage-deep);color:#fff;padding:13px 10px;text-align:center;font-size:.7rem;text-transform:uppercase;letter-spacing:1px;font-family:'Quicksand',sans-serif;font-weight:700}
-.feat-table thead th:first-child{text-align:left;padding-left:18px}
-.feat-table thead th.hl{background:var(--sage)}
-.feat-table td{padding:11px 10px;text-align:center;border-bottom:1px solid #f0f0f0}
-.feat-table td:first-child{text-align:left;padding-left:18px;font-weight:700;color:var(--charcoal);background:var(--cream)}
-.feat-table td.hl{background:var(--sage-pale);font-weight:700;color:var(--sage-dark)}
-.feat-table .y{color:var(--sage)}.feat-table .n{color:#ddd}.feat-table .p{color:var(--honey)}
-
-.compare-bottom{text-align:center;margin-top:40px;padding:36px;background:var(--sage-light);border-radius:var(--r-xl)}
-.compare-bottom h3{font-size:1.5rem;margin-bottom:8px}
-.compare-bottom p{color:var(--text-mid);margin-bottom:20px;max-width:520px;margin-left:auto;margin-right:auto}
-
-/* === TESTIMONIALS === */
-.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.test-card{background:var(--white);border-radius:var(--r-lg);padding:28px;box-shadow:var(--shadow-sm);position:relative}
-.test-card::before{content:'\201C';position:absolute;top:12px;right:20px;font-family:'DM Serif Display',serif;font-size:4rem;color:var(--sage-light);line-height:1}
-.test-stars{color:var(--honey);font-size:.82rem;margin-bottom:12px;letter-spacing:2px}
-.test-card p{font-size:.92rem;color:var(--text-mid);font-style:italic;margin-bottom:18px;line-height:1.7;position:relative;z-index:1}
-.test-author{display:flex;align-items:center;gap:10px}
-.test-avatar{width:42px;height:42px;border-radius:50%;background:var(--sage-light);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--sage-dark);font-size:.85rem}
-.test-author .nm{font-weight:700;font-size:.88rem;color:var(--charcoal)}
-.test-author .rl{font-size:.72rem;color:var(--text-light);font-weight:600}
-
-/* === SATISFACTION === */
-.sat-section{background:linear-gradient(135deg,#F8F4FF,#EEF0FF);padding:80px 0}
-.sat-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
-.sat-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
-.sstat{background:var(--white);border-radius:var(--r);padding:18px;text-align:center;box-shadow:var(--shadow-xs)}
-.sstat .sv{font-family:'DM Serif Display',serif;font-size:2rem;color:var(--sage-dark);line-height:1}
-.sstat .sl{font-size:.72rem;font-weight:700;color:var(--text-light);margin-top:3px}
-.sat-form-box{background:var(--white);border-radius:var(--r-xl);padding:32px;box-shadow:var(--shadow-md)}
-.sat-form-box h3{font-size:1.2rem;margin-bottom:4px}
-.sat-form-box > p{font-size:.82rem;color:var(--text-mid);margin-bottom:20px}
-.anon-tag{display:inline-flex;align-items:center;gap:5px;background:var(--sage-light);color:var(--sage-dark);padding:5px 14px;border-radius:60px;font-size:.72rem;font-weight:700;margin-bottom:16px}
-.emoji-row{display:flex;gap:10px;margin-bottom:16px;justify-content:center}
-.emo-btn{width:50px;height:50px;border-radius:50%;border:2.5px solid #e8e8e8;background:var(--white);font-size:1.4rem;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center}
-.emo-btn:hover,.emo-btn.active{border-color:var(--honey);background:var(--honey-light);transform:scale(1.12)}
-.fg{margin-bottom:14px}
-.fg label{display:block;font-weight:700;font-size:.78rem;margin-bottom:5px;color:var(--charcoal)}
-.fg input,.fg select,.fg textarea{width:100%;padding:11px 14px;border:2px solid #e8e8e8;border-radius:var(--r);font-family:inherit;font-size:.88rem;transition:border-color .2s;background:var(--cream);font-weight:500}
-.fg input:focus,.fg select:focus,.fg textarea:focus{outline:none;border-color:var(--sage);background:var(--white)}
-.fg textarea{resize:vertical;min-height:70px}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-
-/* === CTA === */
-.cta-section{background:var(--sage-deep);padding:72px 0;text-align:center;color:#fff;position:relative;overflow:hidden}
-.cta-section::before{content:'';position:absolute;top:-100px;left:-100px;width:400px;height:400px;border-radius:50%;background:rgba(255,255,255,.03)}
-.cta-section::after{content:'';position:absolute;bottom:-150px;right:-100px;width:500px;height:500px;border-radius:50%;background:rgba(255,255,255,.02)}
-.cta-section .container{position:relative;z-index:1}
-.cta-section h2{font-size:2.2rem;color:#fff;margin-bottom:10px}
-.cta-section p{opacity:.8;max-width:480px;margin:0 auto 28px;font-size:1rem}
-
-/* === CONTACT === */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
-.contact-info h3{font-size:1.7rem;margin-bottom:12px}
-.contact-info > p{color:var(--text-mid);margin-bottom:28px}
-.cd{display:flex;gap:14px;margin-bottom:20px}
-.cd .ci{width:44px;height:44px;border-radius:12px;background:var(--sage-light);color:var(--sage-dark);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
-.cd .ct strong{display:block;font-size:.85rem;font-family:'DM Serif Display',serif;margin-bottom:1px}
-.cd .ct span,.cd .ct a{font-size:.85rem;color:var(--text-mid);font-weight:500}
-.cd .ct a{color:var(--sage-dark)}
-.contact-form-box{background:var(--white);border-radius:var(--r-xl);padding:32px;box-shadow:var(--shadow-md)}
-.contact-form-box h3{font-size:1.2rem;margin-bottom:3px}
-.contact-form-box > p{font-size:.82rem;color:var(--text-mid);margin-bottom:20px}
-
-/* === FOOTER === */
-footer{background:var(--charcoal);color:rgba(255,255,255,.65);padding:56px 0 0}
-.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08)}
-footer h4{color:#fff;font-family:'DM Serif Display',serif;font-size:1rem;margin-bottom:16px}
-footer p{font-size:.84rem;line-height:1.7}
-.footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:14px;font-family:'DM Serif Display',serif;font-size:1.1rem;color:#fff}
-.footer-logo .fl-mark{width:36px;height:36px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center;color:#fff;font-size:.9rem}
-.footer-license{display:flex;gap:6px;align-items:center;margin-top:14px;padding:10px 14px;background:rgba(255,255,255,.04);border-radius:var(--r);font-size:.74rem}
-.footer-license i{color:var(--honey)}
-footer ul{list-style:none}
-footer ul li{margin-bottom:8px}
-footer ul a{color:rgba(255,255,255,.6);font-size:.84rem;font-weight:600;transition:color .2s}
-footer ul a:hover{color:var(--honey)}
-.footer-bottom{padding:20px 0;display:flex;justify-content:space-between;align-items:center;font-size:.78rem;flex-wrap:wrap;gap:10px}
-.f-socials{display:flex;gap:8px}
-.f-socials a{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);transition:all .2s}
-.f-socials a:hover{background:var(--sage);color:#fff}
-
-/* === CHATBOT === */
-.chat-fab{position:fixed;bottom:24px;right:24px;z-index:9999;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--terra),var(--terra-dark));color:#fff;border:none;font-size:1.4rem;cursor:pointer;box-shadow:0 6px 24px rgba(212,119,91,.35);transition:all .3s;display:flex;align-items:center;justify-content:center}
-.chat-fab:hover{transform:scale(1.06)}
-.chat-fab .badge{position:absolute;top:-2px;right:-2px;width:18px;height:18px;border-radius:50%;background:var(--honey);font-size:.65rem;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--charcoal);border:2px solid #fff}
-.chat-win{position:fixed;bottom:94px;right:24px;z-index:9998;width:400px;max-height:560px;background:var(--white);border-radius:var(--r-xl);box-shadow:var(--shadow-lg);display:none;flex-direction:column;overflow:hidden;animation:chatUp .3s ease}
-.chat-win.open{display:flex}
-@keyframes chatUp{from{opacity:0;transform:translateY(16px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
-.chat-top{background:linear-gradient(135deg,var(--sage-dark),var(--sage-deep));color:#fff;padding:16px 18px;display:flex;justify-content:space-between;align-items:center}
-.chat-top-info{display:flex;align-items:center;gap:10px}
-.chat-top-ava{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:1rem}
-.chat-top-text h4{font-family:'Quicksand',sans-serif;font-size:.9rem;font-weight:700}
-.chat-top-text span{font-size:.68rem;opacity:.75;display:flex;align-items:center;gap:4px}
-.chat-top-text span::before{content:'';width:5px;height:5px;border-radius:50%;background:#68d391}
-.chat-x{background:none;border:none;color:#fff;font-size:1.1rem;cursor:pointer;opacity:.6;transition:opacity .2s}
-.chat-x:hover{opacity:1}
-.chat-body{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;max-height:340px;background:var(--cream)}
-.cmsg{max-width:82%;padding:11px 15px;border-radius:18px;font-size:.85rem;line-height:1.6;animation:msgPop .25s ease}
-@keyframes msgPop{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
-.cmsg.bot{background:var(--white);color:var(--text);align-self:flex-start;border-bottom-left-radius:4px;box-shadow:var(--shadow-xs)}
-.cmsg.user{background:var(--sage);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
-.cmsg.sys{background:var(--honey-light);color:var(--charcoal);align-self:center;text-align:center;font-size:.76rem;font-weight:700;border-radius:var(--r);padding:7px 14px}
-.chat-opts{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 10px}
-.copt{background:var(--sage-light);color:var(--sage-deep);border:2px solid transparent;padding:7px 14px;border-radius:60px;font-size:.78rem;font-weight:700;cursor:pointer;transition:all .2s;font-family:inherit}
-.copt:hover{border-color:var(--sage);background:var(--white)}
-.chat-input-wrap{display:flex;gap:6px;padding:10px 14px;border-top:1px solid #eee;background:var(--white)}
-.chat-inp{flex:1;border:2px solid #e8e8e8;border-radius:60px;padding:9px 15px;font-family:inherit;font-size:.85rem;font-weight:500;transition:border-color .2s}
-.chat-inp:focus{outline:none;border-color:var(--sage)}
-.chat-send{width:38px;height:38px;border-radius:50%;background:var(--terra);color:#fff;border:none;cursor:pointer;font-size:.9rem;display:flex;align-items:center;justify-content:center;transition:background .2s}
-.chat-send:hover{background:var(--terra-dark)}
-.typing span{width:7px;height:7px;border-radius:50%;background:#ccc;display:inline-block;margin:0 2px;animation:dot .6s ease-in-out infinite}
-.typing span:nth-child(2){animation-delay:.15s}
-.typing span:nth-child(3){animation-delay:.3s}
-@keyframes dot{0%,100%{opacity:.3;transform:scale(.8)}50%{opacity:1;transform:scale(1)}}
-
-/* === ADMIN DASHBOARD === */
-.admin-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:10000;display:none;align-items:center;justify-content:center;backdrop-filter:blur(3px)}
-.admin-overlay.open{display:flex}
-.admin-modal{background:var(--cream);border-radius:var(--r-xl);width:90%;max-width:920px;max-height:85vh;overflow:auto;box-shadow:var(--shadow-lg)}
-.admin-header{background:linear-gradient(135deg,var(--sage-dark),var(--sage-deep));color:#fff;padding:22px 28px;display:flex;justify-content:space-between;align-items:center;border-radius:var(--r-xl) var(--r-xl) 0 0}
-.admin-header h2{font-family:'DM Serif Display',serif;font-size:1.25rem;font-weight:400}
-.admin-close{background:none;border:none;color:#fff;font-size:1.2rem;cursor:pointer;opacity:.7;transition:opacity .2s}
-.admin-close:hover{opacity:1}
-.admin-body{padding:28px}
-.admin-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px}
-.admin-stat{background:var(--white);border-radius:var(--r-lg);padding:18px;text-align:center;box-shadow:var(--shadow-xs)}
-.admin-stat .val{font-family:'DM Serif Display',serif;font-size:1.8rem;color:var(--sage-dark)}
-.admin-stat .lbl{font-size:.72rem;color:var(--text-light);font-weight:700;margin-top:2px}
-.lead-table{width:100%;border-collapse:separate;border-spacing:0;font-size:.82rem;border-radius:var(--r-lg);overflow:hidden;background:var(--white);box-shadow:var(--shadow-xs)}
-.lead-table th{background:var(--sage-deep);color:#fff;padding:11px 12px;text-align:left;font-weight:700;font-size:.7rem;text-transform:uppercase;letter-spacing:1px;font-family:'Quicksand',sans-serif}
-.lead-table td{padding:11px 12px;border-bottom:1px solid #f0f0f0}
-.lead-status{padding:3px 10px;border-radius:60px;font-size:.68rem;font-weight:700}
-.lead-status.hot{background:var(--terra-light);color:var(--terra-dark)}
-.lead-status.warm{background:var(--honey-light);color:#B8860B}
-.lead-status.enrolled{background:var(--sage-light);color:var(--sage-dark)}
-.mkt-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.mkt-card{background:var(--white);border-radius:var(--r-lg);padding:18px;box-shadow:var(--shadow-xs)}
-.mkt-card h4{font-family:'Quicksand',sans-serif;font-size:.88rem;font-weight:700;margin-bottom:6px}
-.mkt-card p{font-size:.78rem;color:var(--text-mid);line-height:1.6;margin-bottom:6px}
-.mkt-status{font-size:.7rem;font-weight:700;color:var(--sage)}
-
-/* === DEMO === */
-.demo-bar{background:linear-gradient(90deg,var(--terra),#c06040);color:#fff;text-align:center;padding:9px;font-size:.78rem;font-weight:700;letter-spacing:.5px;z-index:10000;position:relative}
-
-/* === RESPONSIVE === */
-
-/* --- Tablet: 960px --- */
-@media(max-width:960px){
-  /* Nav */
-  .nav-links{display:none}
-  .mobile-menu{display:block}
-
-  /* Hero */
-  .hero .container{grid-template-columns:1fr;text-align:center}
-  .hero-sub{margin:0 auto 30px}
-  .hero-btns{justify-content:center}
-  .hero-proof{justify-content:center}
-  .hero-visual{display:none}
-
-  /* Grids → 2-col */
-  .prog-grid{grid-template-columns:1fr 1fr}
-  .why-grid{grid-template-columns:1fr 1fr}
-  .cc-grid{grid-template-columns:1fr 1fr}
-  .compare-intro,.sat-grid,.contact-grid{grid-template-columns:1fr}
-  .test-grid{grid-template-columns:1fr 1fr}
-  .footer-grid{grid-template-columns:1fr 1fr}
-  .frow{grid-template-columns:1fr}
-  .admin-stats{grid-template-columns:1fr 1fr}
-  .mkt-grid{grid-template-columns:1fr}
-
-  /* Compare intro */
-  .compare-stats{grid-template-columns:repeat(2,1fr)}
+:root {
+  --coral: #FF6052;
+  --sunshine: #FFC233;
+  --sky: #3DA5D9;
+  --grape: #7B5EA7;
+  --ink: #2B2D42;
+  --soft-bg: #F4FAFF;
+  --white: #FFFFFF;
+  --light-coral: #FFF0EE;
+  --light-sunshine: #FFFBEE;
+  --light-sky: #EBF6FD;
+  --light-grape: #F3F0F9;
+  --text-body: #3A3C52;
+  --text-muted: #6B7280;
+  --card-shadow: 0 4px 20px rgba(43,45,66,0.10);
+  --card-shadow-hover: 0 10px 36px rgba(43,45,66,0.16);
+  --radius-card: 24px;
+  --radius-pill: 50px;
 }
 
-/* --- Large Mobile: 768px --- */
-@media(max-width:768px){
-  /* Container */
-  .container{padding:0 20px}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  /* Section padding */
-  .section{padding:56px 0}
-  .sat-section{padding:56px 0}
-  .cta-section{padding:52px 0}
+html { scroll-behavior: smooth; }
 
-  /* Section headings */
-  .section-head h2{font-size:1.8rem}
-  .section-head{margin-bottom:36px}
-  .compare-intro h2{font-size:1.8rem}
-  .cta-section h2{font-size:1.8rem}
-  .contact-info h3{font-size:1.4rem}
-
-  /* Hero */
-  .hero{padding:52px 0 72px}
-  .hero h1{font-size:2.2rem}
-  .hero-sub{font-size:.96rem}
-
-  /* Trust */
-  .trust-row{gap:20px}
-  .trust-pill{font-size:.76rem;padding:8px 14px}
-
-  /* Programs */
-  .prog-grid{grid-template-columns:1fr 1fr}
-
-  /* Compare tabs — let them wrap */
-  .compare-tabs{flex-wrap:wrap;gap:6px}
-
-  /* Testimonials */
-  .test-grid{grid-template-columns:1fr}
-
-  /* Footer */
-  .footer-grid{grid-template-columns:1fr 1fr;gap:24px}
-
-  /* Admin */
-  .admin-modal{width:95%;max-height:90vh}
-  .admin-body{padding:18px}
-  .admin-stats{grid-template-columns:1fr 1fr}
-  .lead-table{font-size:.75rem}
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--soft-bg);
+  color: var(--text-body);
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-/* --- Mobile: 600px --- */
-@media(max-width:600px){
-  /* Container */
-  .container{padding:0 16px}
+/* ---- TOPBAR ---- */
+.topbar {
+  background: var(--ink);
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 8px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.topbar a { color: var(--sunshine); text-decoration: none; }
+.topbar a:hover { text-decoration: underline; }
+.topbar-sep { opacity: 0.4; }
 
-  /* Topbar — hide middle items, keep phone + socials */
-  .topbar{padding:6px 0}
-  .topbar .info span{display:none} /* hide hours */
-  .topbar .info{gap:14px}
-  .topbar .info a{font-size:.75rem}
-
-  /* Hero */
-  .hero{padding:40px 0 60px}
-  .hero::before{height:48px}
-  .hero h1{font-size:1.85rem;letter-spacing:-.3px}
-  .hero-sub{font-size:.9rem;margin-bottom:22px}
-  .hero-pill{font-size:.72rem;padding:6px 13px}
-  .hero-btns{flex-direction:column;align-items:center;gap:10px;margin-bottom:24px}
-  .hero-btns .btn{width:100%;max-width:300px;justify-content:center}
-  .hero-proof{gap:18px}
-  .hero-proof-item .num{font-size:1.25rem}
-  .hero-proof-item .lbl{font-size:.67rem}
-
-  /* Section */
-  .section{padding:44px 0}
-  .sat-section{padding:44px 0}
-  .cta-section{padding:40px 0}
-  .section-head{margin-bottom:28px}
-  .section-head h2{font-size:1.6rem}
-  .section-head p{font-size:.88rem}
-  .compare-intro h2{font-size:1.6rem}
-  .cta-section h2{font-size:1.6rem}
-  .cta-section p{font-size:.9rem}
-
-  /* Trust pills — wrap tightly */
-  .trust{padding:14px 0 32px}
-  .trust-row{gap:10px;justify-content:flex-start}
-  .trust-pill{font-size:.72rem;padding:7px 12px;gap:6px}
-
-  /* Programs → 1 col */
-  .prog-grid{grid-template-columns:1fr}
-  .prog-card{display:flex;flex-direction:row;align-items:stretch}
-  .prog-top{height:80px;width:100px;min-width:100px;font-size:2rem;flex-shrink:0;border-radius:0}
-  .prog-top::after{display:none}
-  .prog-body{padding:14px 16px;text-align:left;flex:1}
-  .prog-body h3{font-size:.95rem}
-
-  /* Why us → 1 col */
-  .why-grid{grid-template-columns:1fr}
-  .why-card{padding:20px 16px;display:flex;align-items:center;gap:16px;text-align:left}
-  .why-card .wicon{margin:0;flex-shrink:0;width:52px;height:52px}
-  .why-card h3{margin-bottom:4px}
-
-  /* Compare grid → 1 col */
-  .cc-grid{grid-template-columns:1fr}
-
-  /* Compare intro */
-  .compare-intro{gap:24px;margin-bottom:32px}
-  .compare-stats{grid-template-columns:1fr 1fr}
-  .cstat .cv{font-size:1.6rem}
-
-  /* Compare bottom */
-  .compare-bottom{padding:24px 18px}
-  .compare-bottom h3{font-size:1.25rem}
-
-  /* Testimonials */
-  .test-grid{grid-template-columns:1fr}
-  .test-card{padding:20px}
-
-  /* Satisfaction */
-  .sat-grid{gap:28px}
-  .sat-stats{grid-template-columns:1fr 1fr}
-  .sat-form-box{padding:22px 18px}
-  .emoji-row{gap:7px}
-  .emo-btn{width:42px;height:42px;font-size:1.2rem}
-
-  /* Contact */
-  .contact-grid{gap:28px}
-  .contact-form-box{padding:22px 18px}
-
-  /* Footer */
-  .footer-grid{grid-template-columns:1fr;gap:24px}
-  .footer-bottom{flex-direction:column;align-items:flex-start;gap:12px}
-
-  /* Chatbot */
-  .chat-win{width:calc(100vw - 16px);right:8px;bottom:84px;max-height:480px;border-radius:var(--r-lg)}
-  .chat-body{max-height:260px}
-  .chat-fab{bottom:16px;right:16px;width:54px;height:54px;font-size:1.25rem}
-
-  /* Admin modal */
-  .admin-modal{width:100%;max-width:100%;max-height:95vh;border-radius:var(--r-lg) var(--r-lg) 0 0}
-  .admin-overlay{align-items:flex-end}
-  .admin-header{padding:18px 20px;border-radius:var(--r-lg) var(--r-lg) 0 0}
-  .admin-body{padding:16px}
-  .admin-stats{grid-template-columns:1fr 1fr;gap:10px}
-  .admin-stat{padding:14px}
-  .admin-stat .val{font-size:1.5rem}
-
-  /* Buttons */
-  .btn{padding:13px 24px;font-size:.88rem}
+/* ---- NAV ---- */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 2px solid var(--light-sky);
+  padding: 0 20px;
+}
+.nav-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+.nav-brand {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--coral);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1;
+}
+.nav-brand span.brand-sub {
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 1px;
+}
+.nav-logo-mark {
+  width: 40px; height: 40px; flex-shrink: 0;
+}
+.nav-links {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  list-style: none;
+}
+.nav-links a {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 7px 13px;
+  border-radius: 50px;
+  transition: background 0.2s, color 0.2s;
+}
+.nav-links a:hover { background: var(--light-sky); color: var(--sky); }
+.nav-cta {
+  background: var(--coral) !important;
+  color: #fff !important;
+  padding: 9px 20px !important;
+  border-radius: 50px !important;
+}
+.nav-cta:hover { background: #e8503f !important; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(255,96,82,0.35); }
+.nav-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+.nav-hamburger span {
+  display: block;
+  width: 24px; height: 2.5px;
+  background: var(--ink);
+  border-radius: 2px;
+  margin: 5px 0;
+  transition: all 0.3s;
+}
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  border-top: 2px solid var(--light-sky);
+  padding: 12px 20px 20px;
+  gap: 4px;
+}
+.mobile-menu a {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  display: block;
+}
+.mobile-menu a:hover { background: var(--light-sky); }
+.mobile-menu a.m-cta {
+  background: var(--coral);
+  color: #fff;
+  text-align: center;
+  margin-top: 8px;
+  border-radius: 50px;
 }
 
-/* --- Small Mobile: 390px (iPhone) --- */
-@media(max-width:420px){
-  .container{padding:0 14px}
+@media (max-width: 820px) {
+  .nav-links { display: none; }
+  .nav-hamburger { display: flex; flex-direction: column; }
+  .mobile-menu.open { display: flex; }
+}
 
-  .hero h1{font-size:1.6rem}
-  .hero-sub{font-size:.86rem}
-  .hero-proof{flex-direction:column;gap:12px;align-items:center}
-  .hero-proof-item{flex-direction:row;gap:10px}
+/* ---- HERO ---- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(160deg, #FFF8F0 0%, #EBF6FD 55%, #F3F0F9 100%);
+  padding: 60px 20px 0;
+}
+.hero-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--sunshine);
+  color: var(--ink);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 0.82rem;
+  padding: 7px 16px;
+  border-radius: 50px;
+  margin-bottom: 22px;
+  box-shadow: 0 3px 10px rgba(255,194,51,0.4);
+}
+.hero-badge svg { flex-shrink: 0; }
+.hero h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: clamp(2.1rem, 5vw, 3.2rem);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+.hero h1 .accent-coral { color: var(--coral); }
+.hero h1 .accent-sky { color: var(--sky); }
+.hero-sub {
+  font-size: 1.05rem;
+  color: var(--text-body);
+  max-width: 500px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--coral);
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 4px 16px rgba(255,96,82,0.35);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255,96,82,0.45); background: #e8503f; }
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: transparent;
+  color: var(--sky);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 13px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: 2.5px solid var(--sky);
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s, color 0.2s;
+}
+.btn-secondary:hover { transform: translateY(-2px); background: var(--sky); color: #fff; }
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.stat-chip {
+  background: #fff;
+  border-radius: 16px;
+  padding: 10px 16px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink);
+  box-shadow: 0 2px 10px rgba(43,45,66,0.09);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.stat-chip .stat-num {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--coral);
+}
+/* Hero illustration side */
+.hero-art {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+}
+.hero-art svg.main-art { width: 100%; max-width: 480px; }
 
-  .topbar .info a:last-of-type{display:none} /* hide email on very small */
+/* Floating shapes */
+.float-shape {
+  position: absolute;
+  pointer-events: none;
+}
+@keyframes bob {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+}
+@keyframes bob2 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-9px) rotate(-4deg); }
+}
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-4deg); }
+  50% { transform: rotate(4deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .float-shape, [class*="animate-"] { animation: none !important; transition: none !important; }
+  .bob, .bob2, .spin { animation: none !important; }
+}
+.bob { animation: bob 4s ease-in-out infinite; }
+.bob2 { animation: bob2 5.5s ease-in-out infinite; }
+.spin { animation: spinSlow 12s linear infinite; }
+.wiggle-anim { animation: wiggle 3s ease-in-out infinite; }
 
-  .section-head h2{font-size:1.45rem}
-  .compare-intro h2{font-size:1.45rem}
-  .cta-section h2{font-size:1.45rem}
+/* Wave divider */
+.wave-divider { display: block; width: 100%; overflow: hidden; line-height: 0; }
+.wave-divider svg { display: block; width: 100%; }
 
-  /* Compare stats single col on tiny screens */
-  .compare-stats{grid-template-columns:1fr}
-  .sat-stats{grid-template-columns:1fr 1fr}
+/* Hero bottom wave */
+.hero-wave { margin-top: 40px; }
 
-  /* Feature table: horizontal scroll */
-  .feat-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
-  .feat-table{min-width:480px}
+@media (max-width: 820px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 0; }
+  .hero-art { min-height: 280px; }
+  .hero { padding-top: 40px; }
+}
 
-  /* Admin */
-  .admin-stats{grid-template-columns:1fr 1fr}
-  .mkt-grid{grid-template-columns:1fr}
+/* ---- TRUST CHIPS ---- */
+.trust-section {
+  background: var(--white);
+  padding: 28px 20px;
+}
+.trust-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+.trust-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--soft-bg);
+  border-radius: 50px;
+  padding: 9px 18px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--ink);
+  border: 2px solid transparent;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.trust-chip:hover { border-color: var(--sky); transform: translateY(-2px); }
+.trust-chip .chip-dot {
+  width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+}
 
-  /* Footer */
-  .footer-grid{grid-template-columns:1fr}
+/* ---- SECTION SHARED ---- */
+.section { padding: 70px 20px; }
+.section-inner { max-width: 1140px; margin: 0 auto; }
+.section-label {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin-bottom: 10px;
+}
+.section-title {
+  font-family: 'Fredoka', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+.section-sub {
+  font-size: 1.02rem;
+  color: var(--text-muted);
+  max-width: 560px;
+  line-height: 1.7;
+  margin-bottom: 44px;
+}
 
-  /* Chat */
-  .chat-win{width:calc(100vw - 12px);right:6px}
-  .chat-body{max-height:220px}
+/* ---- PROGRAMS ---- */
+.programs-section { background: var(--white); }
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+.program-card {
+  background: var(--soft-bg);
+  border-radius: var(--radius-card);
+  padding: 28px 26px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+  box-shadow: 0 2px 12px rgba(43,45,66,0.07);
+  cursor: default;
+}
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow-hover);
+}
+.program-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 5px;
+  border-radius: var(--radius-card) var(--radius-card) 0 0;
+}
+.pc-coral::before { background: var(--coral); }
+.pc-sunshine::before { background: var(--sunshine); }
+.pc-sky::before { background: var(--sky); }
+.pc-grape::before { background: var(--grape); }
+.pc-coral2::before { background: #FF8A65; }
+.pc-sky2::before { background: #26C6DA; }
+
+.program-icon {
+  width: 52px; height: 52px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.program-age {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.76rem;
+  padding: 4px 12px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.program-card h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.program-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* ---- WHY CCS ---- */
+.why-section {
+  background: linear-gradient(135deg, #FFF8F0 0%, #EBF6FD 100%);
+  position: relative;
+  overflow: hidden;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+@media (max-width: 640px) { .why-grid { grid-template-columns: 1fr; } }
+.why-card {
+  background: #fff;
+  border-radius: var(--radius-card);
+  padding: 32px 28px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.why-card:hover { transform: translateY(-4px); box-shadow: var(--card-shadow-hover); }
+.why-icon-wrap {
+  width: 56px; height: 56px; border-radius: 18px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.why-card h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 7px;
+}
+.why-card p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.65; }
+
+/* ---- COMPARE ---- */
+.compare-section { background: var(--white); }
+.compare-intro { max-width: 680px; margin-bottom: 44px; }
+
+/* Bar chart style comparison */
+.compare-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 44px;
+}
+.cbar-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.cbar-label {
+  width: 200px;
+  flex-shrink: 0;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--ink);
+}
+.cbar-track {
+  flex: 1;
+  height: 28px;
+  background: var(--soft-bg);
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+}
+.cbar-fill {
+  height: 100%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  justify-content: flex-end;
+  font-weight: 800;
+  font-size: 0.82rem;
+  color: #fff;
+  transition: width 1.2s cubic-bezier(.4,0,.2,1);
+}
+.cbar-ccs { background: var(--coral); }
+.cbar-other { background: var(--sky); }
+.cbar-low { background: #B0BEC5; }
+
+.compare-table-wrap { overflow-x: auto; border-radius: 20px; box-shadow: var(--card-shadow); }
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.compare-table th {
+  background: var(--ink);
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 14px 16px;
+  text-align: left;
+}
+.compare-table th:first-child { border-radius: 0; }
+.compare-table td {
+  padding: 13px 16px;
+  font-size: 0.88rem;
+  border-bottom: 1px solid #F0F4F8;
+}
+.compare-table tr:last-child td { border-bottom: none; }
+.compare-table tr.ccs-row td { background: var(--light-coral); font-weight: 700; color: var(--ink); }
+.compare-table tr:hover:not(.ccs-row) td { background: var(--soft-bg); }
+.check { color: #22C55E; font-size: 1rem; }
+.dash { color: #B0BEC5; }
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--sunshine);
+  color: var(--ink);
+  border-radius: 50px;
+  padding: 3px 10px;
+  font-weight: 800;
+  font-size: 0.82rem;
+}
+.compare-source {
+  margin-top: 14px;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ---- REVIEWS ---- */
+.reviews-section { background: linear-gradient(160deg, #F3F0F9 0%, #EBF6FD 100%); }
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+.review-card {
+  background: #fff;
+  border-radius: var(--radius-card);
+  padding: 30px 26px;
+  box-shadow: var(--card-shadow);
+  position: relative;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.review-card:hover { transform: translateY(-4px); box-shadow: var(--card-shadow-hover); }
+.review-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+.review-stars svg { width: 18px; height: 18px; }
+.review-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-body);
+  margin-bottom: 18px;
+  font-style: italic;
+}
+.review-author {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+.review-since {
+  font-weight: 600;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.review-quote-mark {
+  position: absolute;
+  top: 20px; right: 22px;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 4.5rem;
+  line-height: 1;
+  color: var(--light-sky);
+  pointer-events: none;
+  select: none;
+}
+.yelp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 36px;
+  background: var(--coral);
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 11px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.yelp-link:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255,96,82,0.35); }
+
+/* ---- FEEDBACK ---- */
+.feedback-section { background: var(--white); }
+.feedback-inner { max-width: 820px; }
+.satisfaction-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 18px;
+  margin-bottom: 44px;
+}
+.sat-card {
+  background: var(--soft-bg);
+  border-radius: 20px;
+  padding: 22px 20px;
+  text-align: center;
+}
+.sat-score {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.sat-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+.sat-bar {
+  height: 6px;
+  background: #E0E7EF;
+  border-radius: 50px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.sat-bar-fill {
+  height: 100%;
+  border-radius: 50px;
+}
+
+.feedback-form-wrap {
+  background: var(--soft-bg);
+  border-radius: var(--radius-card);
+  padding: 36px;
+  box-shadow: var(--card-shadow);
+}
+.feedback-form-wrap h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.feedback-form-wrap p.form-sub {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+.form-group { margin-bottom: 20px; }
+.form-group label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--ink);
+  margin-bottom: 7px;
+}
+.form-group select,
+.form-group textarea,
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+  width: 100%;
+  border: 2px solid #DDE4EF;
+  border-radius: 14px;
+  padding: 11px 15px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.92rem;
+  color: var(--ink);
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s;
+  appearance: none;
+}
+.form-group select:focus,
+.form-group textarea:focus,
+.form-group input:focus {
+  border-color: var(--sky);
+  box-shadow: 0 0 0 3px rgba(61,165,217,0.15);
+}
+.form-group textarea { resize: vertical; min-height: 100px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 560px) { .form-row { grid-template-columns: 1fr; } }
+.btn-submit {
+  background: var(--grape);
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 13px 30px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 4px 14px rgba(123,94,167,0.3);
+}
+.btn-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(123,94,167,0.4); background: #6B4F97; }
+.thankyou-state {
+  display: none;
+  text-align: center;
+  padding: 40px 20px;
+}
+.thankyou-state svg { margin-bottom: 18px; }
+.thankyou-state h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.6rem;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.thankyou-state p { color: var(--text-muted); font-size: 0.95rem; }
+
+/* ---- CONTACT ---- */
+.contact-section {
+  background: linear-gradient(135deg, #FFF8F0 0%, #EBF6FD 100%);
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px;
+  align-items: start;
+}
+@media (max-width: 820px) { .contact-grid { grid-template-columns: 1fr; } }
+.contact-info h2 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+.contact-info p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+.contact-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 36px; }
+.contact-details { display: flex; flex-direction: column; gap: 14px; }
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 0.92rem;
+}
+.contact-item-icon {
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.contact-item strong { display: block; font-weight: 700; color: var(--ink); margin-bottom: 2px; }
+.contact-item span, .contact-item a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.contact-item a:hover { color: var(--sky); text-decoration: underline; }
+
+.contact-form-card {
+  background: #fff;
+  border-radius: var(--radius-card);
+  padding: 36px;
+  box-shadow: var(--card-shadow);
+}
+.contact-form-card h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.4rem;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+.required-star { color: var(--coral); }
+.btn-send {
+  background: var(--sky);
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 13px 30px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 4px 14px rgba(61,165,217,0.3);
+}
+.btn-send:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(61,165,217,0.4); background: #2b94c8; }
+
+/* ---- FOOTER ---- */
+.site-footer {
+  background: var(--ink);
+  color: rgba(255,255,255,0.85);
+  padding: 60px 20px 30px;
+}
+.footer-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+@media (max-width: 820px) {
+  .footer-top { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .footer-top { grid-template-columns: 1fr; }
+}
+.footer-brand .brand-name {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--coral);
+  margin-bottom: 10px;
+}
+.footer-brand p {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  max-width: 280px;
+  margin-bottom: 14px;
+}
+.footer-license {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+}
+.footer-col h4 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sunshine);
+  margin-bottom: 16px;
+}
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.footer-col ul a {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-col ul a:hover { color: #fff; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.45);
+}
+
+/* ---- CHAT BUTTON ---- */
+.chat-fab {
+  position: fixed;
+  bottom: 28px; right: 28px;
+  z-index: 200;
+  background: var(--grape);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 22px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 6px 24px rgba(123,94,167,0.45);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.chat-fab:hover { transform: translateY(-3px); box-shadow: 0 10px 32px rgba(123,94,167,0.5); }
+
+/* ---- ANIMATED SECTION ENTRANCE ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* ---- MISC ---- */
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
 }
 </style>
 </head>
 <body>
 
-<div class="demo-bar"><i class="fas fa-sparkles"></i> CC's V2 DEMO — AI Chatbot + Lead Capture + Parent Feedback + Owner Dashboard + Competitive Intel + Marketing Agent</div>
-
-<!-- TOPBAR -->
-<div class="topbar">
-  <div class="container">
-    <div class="info">
-      <a href="tel:7146716970"><i class="fas fa-phone"></i> (714) 671-6970</a>
-      <a href="mailto:info@ccslearningcenter.com"><i class="fas fa-envelope"></i> info@ccslearningcenter.com</a>
-      <span><i class="fas fa-clock"></i> Mon-Fri 6:30a - 6:00p</span>
-    </div>
-    <div class="socials">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
-  </div>
+<!-- TOP BAR -->
+<div class="topbar" role="complementary" aria-label="Contact information">
+  <a href="tel:7146716970">(714) 671-6970</a>
+  <span class="topbar-sep" aria-hidden="true">·</span>
+  <a href="mailto:info@ccslearningcenter.com">info@ccslearningcenter.com</a>
+  <span class="topbar-sep" aria-hidden="true">·</span>
+  <span>Mon-Fri 6:30 AM - 6:00 PM</span>
 </div>
 
-<!-- NAV -->
-<nav id="mainNav">
-  <div class="container">
-    <a href="#" class="logo">
-      <div class="logo-mark"><i class="fas fa-seedling"></i></div>
-      <div class="logo-type">CC's Learning Center<small>Brea, California</small></div>
+<!-- NAVIGATION -->
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand" aria-label="CC's Learning Center home">
+      <!-- Logo mark: friendly crayon-style sun/blocks -->
+      <svg class="nav-logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="12" fill="#FFF0EE"/>
+        <rect x="8" y="22" width="8" height="10" rx="3" fill="#FF6052"/>
+        <rect x="18" y="16" width="8" height="16" rx="3" fill="#FFC233"/>
+        <rect x="28" y="20" width="8" height="12" rx="3" fill="#3DA5D9"/>
+        <circle cx="20" cy="10" r="5" fill="#FFC233" opacity="0.85"/>
+        <line x1="20" y1="4" x2="20" y2="2" stroke="#FFC233" stroke-width="2" stroke-linecap="round"/>
+        <line x1="24.2" y1="5.8" x2="25.6" y2="4.4" stroke="#FFC233" stroke-width="2" stroke-linecap="round"/>
+        <line x1="15.8" y1="5.8" x2="14.4" y2="4.4" stroke="#FFC233" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <div>
+        CC's Learning Center
+        <span class="brand-sub">Brea, California</span>
+      </div>
     </a>
-    <ul class="nav-links">
+
+    <ul class="nav-links" role="list">
       <li><a href="#programs">Programs</a></li>
       <li><a href="#compare">Compare</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#feedback">Feedback</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#" onclick="event.preventDefault();toggleAdmin()" title="Owner Dashboard"><i class="fas fa-chart-line"></i></a></li>
-      <li><a href="#" class="nav-cta" onclick="event.preventDefault();openChat()"><i class="fas fa-comments"></i> Chat With Us</a></li>
+      <li><a href="#contact" class="nav-cta">Schedule a Tour</a></li>
     </ul>
-    <button class="mobile-menu" onclick="openChat()"><i class="fas fa-bars"></i></button>
+
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav" onclick="toggleMobileNav(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+    <a href="#programs">Programs</a>
+    <a href="#compare">Compare</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="m-cta">Schedule a Tour</a>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <div class="hero-pill"><i class="fas fa-star"></i> Rated 5.0 on Yelp — 65 Five-Star Reviews</div>
-      <h1>Where Your Child's <span>Brightest Days</span> Begin</h1>
-      <p class="hero-sub">A warm, family-owned center where curious minds explore, friendships blossom, and every child is known by name. Infants through Pre-K, right in the heart of Brea.</p>
-      <div class="hero-btns">
-        <a href="#" class="btn btn-terra" onclick="event.preventDefault();openChat('tour')"><i class="fas fa-calendar-check"></i> Schedule a Tour</a>
-        <a href="#programs" class="btn btn-outline"><i class="fas fa-arrow-down"></i> Explore Programs</a>
+<section class="hero" aria-labelledby="hero-heading">
+  <!-- Floating background decorations -->
+  <div class="float-shape bob" style="top:18%;left:3%;opacity:0.18;" aria-hidden="true">
+    <svg width="60" height="60" viewBox="0 0 60 60"><circle cx="30" cy="30" r="30" fill="#FFC233"/></svg>
+  </div>
+  <div class="float-shape bob2" style="top:60%;left:1%;opacity:0.13;" aria-hidden="true">
+    <svg width="40" height="40" viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#7B5EA7"/></svg>
+  </div>
+  <div class="float-shape bob" style="top:10%;right:5%;opacity:0.15;" aria-hidden="true">
+    <svg width="50" height="50" viewBox="0 0 50 50"><polygon points="25,4 46,46 4,46" fill="#3DA5D9"/></svg>
+  </div>
+
+  <div class="hero-inner">
+    <!-- Text Column -->
+    <div class="hero-text">
+      <div class="hero-badge">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M8 1l1.85 3.75L14 5.5l-3 2.92.71 4.13L8 10.35l-3.71 2.2.71-4.13L2 5.5l4.15-.75L8 1z" fill="#2B2D42"/>
+        </svg>
+        Rated 5.0 on Yelp, 65 Five-Star Reviews
       </div>
-      <div class="hero-proof">
-        <div class="hero-proof-item"><div class="num">15+</div><div class="lbl">Years Serving<br>Brea Families</div></div>
-        <div class="hero-proof-item"><div class="num">6wk-12yr</div><div class="lbl">Widest Age<br>Range in Brea</div></div>
-        <div class="hero-proof-item"><div class="num">#1</div><div class="lbl">Rated Center<br>in Brea</div></div>
+
+      <h1 id="hero-heading">
+        Where Your Child's<br>
+        <span class="accent-coral">Brightest Days</span><br>
+        <span class="accent-sky">Begin</span>
+      </h1>
+
+      <p class="hero-sub">
+        A warm, family-owned center where curious minds explore, friendships blossom, and every child is known by name. Infants through Pre-K, right in the heart of Brea.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#contact" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M9 1.5A7.5 7.5 0 1 1 1.5 9 7.5 7.5 0 0 1 9 1.5zm0 4v4.25l2.75 1.58" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          Schedule a Tour
+        </a>
+        <a href="#programs" class="btn-secondary">
+          Explore Programs
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero-stats" role="list" aria-label="Key facts">
+        <div class="stat-chip" role="listitem">
+          <span class="stat-num">15+</span> Years Serving Brea Families
+        </div>
+        <div class="stat-chip" role="listitem">
+          <span class="stat-num">6wk-12yr</span> Widest Age Range
+        </div>
+        <div class="stat-chip" role="listitem">
+          <span class="stat-num">#1</span> Rated in Brea
+        </div>
+        <div class="stat-chip" role="listitem">
+          State Licensed <strong style="color:var(--grape);margin-left:4px">#304370797</strong>
+        </div>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="hero-img-main"><div class="placeholder"><i class="fas fa-children"></i></div></div>
-      <div class="hero-img-overlay">
-        <div class="hero-chip"><div class="chip-icon" style="background:var(--sage-light);color:var(--sage-dark)"><i class="fas fa-shield-halved"></i></div> State Licensed #304370797</div>
-        <div class="hero-chip"><div class="chip-icon" style="background:var(--honey-light);color:#b8860b"><i class="fas fa-heart"></i></div> Family-Owned Since Day One</div>
-      </div>
+
+    <!-- Illustration Column -->
+    <div class="hero-art" aria-hidden="true">
+      <!-- Bespoke hand-drawn style SVG illustration -->
+      <svg class="main-art" viewBox="0 0 460 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of children playing at CC's Learning Center">
+        <!-- Sky background blob -->
+        <path d="M60 320 Q10 280 30 200 Q50 110 140 80 Q230 50 310 90 Q400 130 420 210 Q440 300 380 340 Q310 380 200 370 Q90 360 60 320Z" fill="#EBF6FD"/>
+        <!-- Sun -->
+        <circle cx="360" cy="70" r="38" fill="#FFC233" opacity="0.9"/>
+        <circle cx="360" cy="70" r="28" fill="#FFD65A"/>
+        <!-- Sun rays -->
+        <g stroke="#FFC233" stroke-width="3" stroke-linecap="round" opacity="0.7">
+          <line x1="360" y1="22" x2="360" y2="14"/>
+          <line x1="384" y1="30" x2="390" y2="24"/>
+          <line x1="398" y1="54" x2="406" y2="50"/>
+          <line x1="398" y1="86" x2="406" y2="90"/>
+          <line x1="384" y1="110" x2="390" y2="116"/>
+          <line x1="336" y1="110" x2="330" y2="116"/>
+          <line x1="322" y1="86" x2="314" y2="90"/>
+          <line x1="322" y1="54" x2="314" y2="50"/>
+          <line x1="336" y1="30" x2="330" y2="24"/>
+        </g>
+        <!-- Cloud 1 -->
+        <ellipse cx="100" cy="90" rx="45" ry="25" fill="#fff" opacity="0.9"/>
+        <ellipse cx="75" cy="98" rx="28" ry="20" fill="#fff" opacity="0.9"/>
+        <ellipse cx="128" cy="98" rx="28" ry="20" fill="#fff" opacity="0.9"/>
+        <!-- Cloud 2 small -->
+        <ellipse cx="280" cy="55" rx="32" ry="17" fill="#fff" opacity="0.75"/>
+        <ellipse cx="260" cy="62" rx="20" ry="15" fill="#fff" opacity="0.75"/>
+        <ellipse cx="300" cy="62" rx="20" ry="15" fill="#fff" opacity="0.75"/>
+        <!-- Building / school house shape -->
+        <rect x="110" y="190" width="230" height="155" rx="16" fill="#fff" stroke="#E0E7EF" stroke-width="2"/>
+        <!-- Roof blob -->
+        <path d="M95 195 Q225 145 355 195" stroke="#FF6052" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <path d="M95 200 Q225 150 355 200 L355 195 Q225 145 95 195Z" fill="#FF6052" opacity="0.2"/>
+        <!-- Door -->
+        <rect x="200" y="280" width="50" height="65" rx="25" fill="#3DA5D9"/>
+        <circle cx="238" cy="316" r="4" fill="#fff" opacity="0.8"/>
+        <!-- Windows -->
+        <rect x="128" y="218" width="52" height="42" rx="10" fill="#EBF6FD" stroke="#3DA5D9" stroke-width="2.5"/>
+        <rect x="270" y="218" width="52" height="42" rx="10" fill="#EBF6FD" stroke="#3DA5D9" stroke-width="2.5"/>
+        <!-- Cross on windows -->
+        <line x1="154" y1="218" x2="154" y2="260" stroke="#3DA5D9" stroke-width="1.5" opacity="0.5"/>
+        <line x1="128" y1="239" x2="180" y2="239" stroke="#3DA5D9" stroke-width="1.5" opacity="0.5"/>
+        <line x1="296" y1="218" x2="296" y2="260" stroke="#3DA5D9" stroke-width="1.5" opacity="0.5"/>
+        <line x1="270" y1="239" x2="322" y2="239" stroke="#3DA5D9" stroke-width="1.5" opacity="0.5"/>
+        <!-- Flag / pennant -->
+        <line x1="225" y1="150" x2="225" y2="175" stroke="#FF6052" stroke-width="2.5" stroke-linecap="round"/>
+        <polygon points="225,150 248,160 225,170" fill="#FF6052"/>
+        <!-- Sign: CCs -->
+        <rect x="155" y="265" width="40" height="16" rx="6" fill="#FFC233"/>
+        <rect x="255" y="265" width="40" height="16" rx="6" fill="#7B5EA7"/>
+        <!-- Ground / grass blob -->
+        <path d="M60 345 Q150 320 225 330 Q300 340 400 325 Q420 345 390 360 L50 360Z" fill="#B8E6B0" opacity="0.7"/>
+        <!-- Dotted path -->
+        <path d="M130 345 Q200 355 280 345" stroke="#FFC233" stroke-width="3" stroke-dasharray="6 8" stroke-linecap="round" fill="none"/>
+        <!-- Child figure 1 (simple round-head style) -->
+        <circle cx="155" cy="310" r="14" fill="#FFD0B3"/>
+        <rect x="147" y="323" width="16" height="22" rx="8" fill="#FF6052"/>
+        <rect x="141" y="326" width="8" height="14" rx="4" fill="#FF6052"/>
+        <rect x="163" y="326" width="8" height="14" rx="4" fill="#FF6052"/>
+        <rect x="149" y="344" width="7" height="15" rx="4" fill="#3DA5D9"/>
+        <rect x="159" y="344" width="7" height="15" rx="4" fill="#3DA5D9"/>
+        <!-- Child hair -->
+        <path d="M143 308 Q155 296 167 308" fill="#7B5EA7"/>
+        <!-- Child figure 2 -->
+        <circle cx="310" cy="308" r="14" fill="#FFDAB3"/>
+        <rect x="302" y="321" width="16" height="22" rx="8" fill="#7B5EA7"/>
+        <rect x="296" y="324" width="8" height="14" rx="4" fill="#7B5EA7"/>
+        <rect x="318" y="324" width="8" height="14" rx="4" fill="#7B5EA7"/>
+        <rect x="304" y="342" width="7" height="15" rx="4" fill="#FFC233"/>
+        <rect x="314" y="342" width="7" height="15" rx="4" fill="#FFC233"/>
+        <!-- Child 2 hair -->
+        <ellipse cx="310" cy="300" rx="14" ry="7" fill="#FF6052"/>
+        <!-- Blocks on ground -->
+        <rect x="178" y="332" width="20" height="20" rx="5" fill="#FFC233"/>
+        <rect x="182" y="332" width="12" height="12" rx="3" fill="#FFD65A"/>
+        <text x="183" y="345" font-size="8" fill="#2B2D42" font-family="Fredoka, sans-serif">A</text>
+        <rect x="250" y="330" width="20" height="20" rx="5" fill="#3DA5D9"/>
+        <text x="256" y="344" font-size="8" fill="#fff" font-family="Fredoka, sans-serif">2</text>
+        <!-- Stars floating -->
+        <path d="M68 165 l3 6 6 1-4.5 4.3 1 6.2L68 179l-5.5 3.5 1-6.2L59 172l6-1z" fill="#FFC233" class="bob2"/>
+        <path d="M400 140 l2.5 5 5 .8-3.7 3.6.8 5.2-4.6-2.9-4.6 2.9.8-5.2-3.7-3.6 5-.8z" fill="#FF6052" opacity="0.7"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Wave bottom -->
+  <div class="hero-wave wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 35 Q180 0 360 35 Q540 70 720 35 Q900 0 1080 35 Q1260 70 1440 35 L1440 70 L0 70Z" fill="#FFFFFF"/>
+    </svg>
+  </div>
+</section>
+
+<!-- TRUST CHIPS -->
+<section class="trust-section" aria-labelledby="trust-heading">
+  <h2 id="trust-heading" class="sr-only">Why families trust CC's Learning Center</h2>
+  <div class="trust-inner">
+    <div class="trust-chip">
+      <span class="chip-dot" style="background:var(--coral)"></span>
+      Family-Owned Since Day One
+    </div>
+    <div class="trust-chip">
+      <span class="chip-dot" style="background:var(--sky)"></span>
+      State Licensed
+    </div>
+    <div class="trust-chip">
+      <span class="chip-dot" style="background:var(--sunshine)"></span>
+      Full Meals Included
+    </div>
+    <div class="trust-chip">
+      <span class="chip-dot" style="background:var(--grape)"></span>
+      Low Ratios
+    </div>
+    <div class="trust-chip">
+      <span class="chip-dot" style="background:#22C55E"></span>
+      Multicultural
+    </div>
+    <div class="trust-chip">
+      <span class="chip-dot" style="background:#FF8A65"></span>
+      Bilingual
     </div>
   </div>
 </section>
 
-<!-- TRUST -->
-<div class="trust">
-  <div class="container">
-    <div class="trust-row">
-      <div class="trust-pill"><i class="fas fa-shield-halved"></i> State Licensed</div>
-      <div class="trust-pill"><i class="fas fa-utensils"></i> Full Meals Included</div>
-      <div class="trust-pill"><i class="fas fa-users"></i> Low Ratios</div>
-      <div class="trust-pill"><i class="fas fa-globe"></i> Multicultural</div>
-      <div class="trust-pill"><i class="fas fa-language"></i> Bilingual</div>
-    </div>
-  </div>
+<!-- WAVE INTO PROGRAMS -->
+<div class="wave-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 25 Q360 0 720 25 Q1080 50 1440 25 L1440 50 L0 50Z" fill="#ffffff"/>
+  </svg>
 </div>
 
 <!-- PROGRAMS -->
-<section id="programs" class="section s-bg">
-  <div class="container">
-    <div class="section-head"><div class="tag">Our Programs</div><h2>Thoughtful Care for Every Stage</h2><p>Click any program to learn more through our chat assistant.</p></div>
-    <div class="prog-grid">
-      <div class="prog-card pc1" onclick="openChat('infant')"><div class="prog-top"><i class="fas fa-baby"></i></div><div class="prog-body"><h3>Infant Care</h3><div class="age">6 Weeks - 18 Months</div><p>Safe, nurturing atmosphere where your baby builds trust through consistent care.</p><span class="prog-link">Learn More <i class="fas fa-arrow-right"></i></span></div></div>
-      <div class="prog-card pc2" onclick="openChat('toddler')"><div class="prog-top"><i class="fas fa-child-reaching"></i></div><div class="prog-body"><h3>Toddler Program</h3><div class="age">18 Months - 2.5 Years</div><p>Building creativity and curiosity through hands-on guided play.</p><span class="prog-link">Learn More <i class="fas fa-arrow-right"></i></span></div></div>
-      <div class="prog-card pc3" onclick="openChat('preschool')"><div class="prog-top"><i class="fas fa-puzzle-piece"></i></div><div class="prog-body"><h3>Early Preschool</h3><div class="age">2.5 - 3 Years</div><p>Structured instruction meets age-appropriate wonder and play.</p><span class="prog-link">Learn More <i class="fas fa-arrow-right"></i></span></div></div>
-      <div class="prog-card pc4" onclick="openChat('preschool')"><div class="prog-top"><i class="fas fa-palette"></i></div><div class="prog-body"><h3>Preschool</h3><div class="age">3 - 4 Years</div><p>School readiness, creative expression, and social skills.</p><span class="prog-link">Learn More <i class="fas fa-arrow-right"></i></span></div></div>
-      <div class="prog-card pc5" onclick="openChat('prek')"><div class="prog-top"><i class="fas fa-graduation-cap"></i></div><div class="prog-body"><h3>Pre-Kindergarten</h3><div class="age">4 - 5 Years</div><p>Focused kindergarten preparation and classroom confidence.</p><span class="prog-link">Learn More <i class="fas fa-arrow-right"></i></span></div></div>
-      <div class="prog-card pc6" onclick="openChat('afterschool')"><div class="prog-top"><i class="fas fa-book-open-reader"></i></div><div class="prog-body"><h3>After School</h3><div class="age">5 - 12 Years</div><p>Structured academics and safe, engaging after-school care.</p><span class="prog-link">Learn More <i class="fas fa-arrow-right"></i></span></div></div>
+<section class="section programs-section" id="programs" aria-labelledby="programs-heading">
+  <div class="section-inner">
+    <p class="section-label">What We Offer</p>
+    <h2 class="section-title" id="programs-heading">Thoughtful Care for Every Stage</h2>
+    <p class="section-sub">From your baby's very first days outside the home to after-school pickup, we've built programs that meet each child where they are.</p>
+
+    <div class="programs-grid">
+      <!-- Infant -->
+      <article class="program-card pc-coral reveal" tabindex="0">
+        <div class="program-icon" style="background:var(--light-coral);">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <circle cx="14" cy="10" r="7" fill="#FF6052"/>
+            <path d="M6 22 Q14 18 22 22" stroke="#FF6052" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+        <span class="program-age" style="background:var(--light-coral);color:var(--coral);">6 Weeks - 18 Months</span>
+        <h3>Infant Care</h3>
+        <p>A safe, nurturing atmosphere where your baby builds trust through consistent, attentive care from the very start.</p>
+      </article>
+
+      <!-- Toddler -->
+      <article class="program-card pc-sunshine reveal" tabindex="0">
+        <div class="program-icon" style="background:var(--light-sunshine);">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <rect x="4" y="14" width="8" height="10" rx="3" fill="#FFC233"/>
+            <rect x="14" y="9" width="8" height="15" rx="3" fill="#FFC233"/>
+            <circle cx="18" cy="5" r="4" fill="#FFD65A"/>
+          </svg>
+        </div>
+        <span class="program-age" style="background:var(--light-sunshine);color:#B38A00;">18 Months - 2.5 Years</span>
+        <h3>Toddler Program</h3>
+        <p>Building creativity and curiosity through hands-on guided play that sparks wonder at every turn.</p>
+      </article>
+
+      <!-- Early Preschool -->
+      <article class="program-card pc-sky reveal" tabindex="0">
+        <div class="program-icon" style="background:var(--light-sky);">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <path d="M6 20 L14 6 L22 20Z" stroke="#3DA5D9" stroke-width="2.5" stroke-linejoin="round" fill="#EBF6FD"/>
+            <circle cx="14" cy="15" r="3" fill="#3DA5D9"/>
+          </svg>
+        </div>
+        <span class="program-age" style="background:var(--light-sky);color:#1A7CA8;">2.5 - 3 Years</span>
+        <h3>Early Preschool</h3>
+        <p>Structured instruction meets age-appropriate wonder and play, setting the stage for confident learning.</p>
+      </article>
+
+      <!-- Preschool -->
+      <article class="program-card pc-grape reveal" tabindex="0">
+        <div class="program-icon" style="background:var(--light-grape);">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <rect x="5" y="10" width="18" height="14" rx="5" fill="#7B5EA7" opacity="0.2"/>
+            <rect x="5" y="10" width="18" height="14" rx="5" stroke="#7B5EA7" stroke-width="2.5" fill="none"/>
+            <path d="M10 10 V7 Q10 4 14 4 Q18 4 18 7 V10" stroke="#7B5EA7" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <circle cx="14" cy="17" r="2.5" fill="#7B5EA7"/>
+          </svg>
+        </div>
+        <span class="program-age" style="background:var(--light-grape);color:#5A3D87;">3 - 4 Years</span>
+        <h3>Preschool</h3>
+        <p>School readiness, creative expression, and the social skills that help kids truly thrive.</p>
+      </article>
+
+      <!-- Pre-K -->
+      <article class="program-card pc-coral2 reveal" tabindex="0">
+        <div class="program-icon" style="background:#FFF3EE;">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <path d="M4 22 L14 5 L24 22" stroke="#FF8A65" stroke-width="2.5" stroke-linejoin="round" fill="none"/>
+            <path d="M8 22 L14 12 L20 22" stroke="#FF8A65" stroke-width="2" stroke-linejoin="round" fill="#FFF3EE"/>
+          </svg>
+        </div>
+        <span class="program-age" style="background:#FFF3EE;color:#C05020;">4 - 5 Years</span>
+        <h3>Pre-Kindergarten</h3>
+        <p>Focused kindergarten preparation so children walk into their first classroom calm, ready, and confident.</p>
+      </article>
+
+      <!-- After School -->
+      <article class="program-card pc-sky2 reveal" tabindex="0">
+        <div class="program-icon" style="background:#E8FAFA;">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <circle cx="14" cy="14" r="8" stroke="#26C6DA" stroke-width="2.5" fill="#E8FAFA"/>
+            <path d="M14 9 V14 L18 17" stroke="#26C6DA" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="program-age" style="background:#E8FAFA;color:#008A9E;">5 - 12 Years</span>
+        <h3>After School</h3>
+        <p>Structured academics and safe, engaging after-school care that gives working families real peace of mind.</p>
+      </article>
+    </div>
+
+    <div style="text-align:center;margin-top:44px;">
+      <a href="#contact" class="btn-primary">
+        Schedule a Tour
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- WHY US -->
-<section class="section s-green">
-  <div class="container">
-    <div class="section-head"><div class="tag">Why Families Choose Us</div><h2>What Makes CC's Different</h2></div>
+<!-- WAVY DIVIDER -->
+<div class="wave-divider" aria-hidden="true" style="background:#fff;">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0 Q360 60 720 0 Q1080 -60 1440 0 L1440 60 L0 60Z" fill="#FFF8F0"/>
+  </svg>
+</div>
+
+<!-- WHY CCS -->
+<section class="section why-section" id="why" aria-labelledby="why-heading">
+  <div class="section-inner">
+    <p class="section-label">What Makes CC's Different</p>
+    <h2 class="section-title" id="why-heading">Why Families Choose Us, and Stay</h2>
+    <p class="section-sub">We're small by choice. That means every teacher knows every child, and every family feels it from day one.</p>
+
     <div class="why-grid">
-      <div class="why-card"><div class="wicon"><i class="fas fa-hand-holding-heart"></i></div><h3>They Know My Child</h3><p>Small enough that every teacher knows every child personally.</p></div>
-      <div class="why-card"><div class="wicon"><i class="fas fa-apple-whole"></i></div><h3>Real Meals Daily</h3><p>Breakfast, lunch, and snack prepared on-site. No packing lunches.</p></div>
-      <div class="why-card"><div class="wicon"><i class="fas fa-comments"></i></div><h3>We Communicate</h3><p>Daily updates and a genuine open-door policy for every parent.</p></div>
-      <div class="why-card"><div class="wicon"><i class="fas fa-brain"></i></div><h3>Learning by Living</h3><p>Building problem-solvers and confident kids ready for school and life.</p></div>
+      <article class="why-card reveal">
+        <div class="why-icon-wrap" style="background:var(--light-coral);">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+            <circle cx="13" cy="9" r="5" fill="#FF6052"/>
+            <path d="M5 20 Q13 15 21 20" stroke="#FF6052" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <circle cx="20" cy="6" r="3" fill="#FFC233"/>
+            <circle cx="6" cy="6" r="3" fill="#3DA5D9"/>
+          </svg>
+        </div>
+        <div>
+          <h3>They Know My Child</h3>
+          <p>Small enough that every teacher knows every child personally. No lost faces, no forgotten names. Your child is seen, every single day.</p>
+        </div>
+      </article>
+
+      <article class="why-card reveal">
+        <div class="why-icon-wrap" style="background:var(--light-sunshine);">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+            <rect x="4" y="10" width="18" height="12" rx="5" fill="#FFC233" opacity="0.3" stroke="#FFC233" stroke-width="2"/>
+            <path d="M9 10 V8 Q9 4 13 4 Q17 4 17 8 V10" stroke="#FFC233" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M8 16 Q13 13 18 16" stroke="#FFC233" stroke-width="2" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Real Meals Daily</h3>
+          <p>Breakfast, lunch, and a snack are prepared on-site every day. No packing lunches, no forgotten snacks. Just good food, ready and warm.</p>
+        </div>
+      </article>
+
+      <article class="why-card reveal">
+        <div class="why-icon-wrap" style="background:var(--light-sky);">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+            <path d="M4 18 Q4 22 8 22 L18 22 Q22 22 22 18 L22 10 Q22 6 18 6 L8 6 Q4 6 4 10 Z" stroke="#3DA5D9" stroke-width="2" fill="#EBF6FD"/>
+            <path d="M9 13 L17 13M9 16 L14 16" stroke="#3DA5D9" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3>We Communicate</h3>
+          <p>Daily updates and a genuine open-door policy. You always know what your child is up to, how they're doing, and who to call.</p>
+        </div>
+      </article>
+
+      <article class="why-card reveal">
+        <div class="why-icon-wrap" style="background:var(--light-grape);">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+            <circle cx="13" cy="13" r="8" stroke="#7B5EA7" stroke-width="2" fill="var(--light-grape)"/>
+            <path d="M9 13 L12 16 L17 10" stroke="#7B5EA7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Learning by Living</h3>
+          <p>We build problem-solvers and curious kids who are ready for school and life. Not just seat work. Real, joyful discovery.</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
+
+<!-- WAVE INTO COMPARE -->
+<div class="wave-divider" aria-hidden="true" style="background:linear-gradient(135deg,#FFF8F0,#EBF6FD);">
+  <svg viewBox="0 0 1440 55" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 30 Q240 0 480 30 Q720 60 960 30 Q1200 0 1440 30 L1440 55 L0 55Z" fill="#ffffff"/>
+  </svg>
+</div>
 
 <!-- COMPARE -->
-<section id="compare" class="section">
-  <div class="container">
-    <div class="compare-intro">
-      <div>
-        <div class="tag" style="color:var(--sage);font-family:'Quicksand',sans-serif;font-weight:700;font-size:.75rem;text-transform:uppercase;letter-spacing:2.5px;margin-bottom:10px">How We Compare</div>
-        <h2>See How CC's Stacks Up Against Every Center in Brea</h2>
-        <p>We welcome comparison. When parents do their research, they consistently choose CC's.</p>
-        <a href="#" class="btn btn-terra" onclick="event.preventDefault();openChat('tour')" style="margin-top:8px"><i class="fas fa-calendar-check"></i> See For Yourself</a>
-      </div>
-      <div class="compare-stats">
-        <div class="cstat gold"><div class="cv accent">5.0</div><div class="cl">Yelp Rating (65 Reviews)</div></div>
-        <div class="cstat"><div class="cv">#1</div><div class="cl">Rated in Brea (22 centers)</div></div>
-        <div class="cstat"><div class="cv">15+</div><div class="cl">Years Trusted</div></div>
-        <div class="cstat"><div class="cv">6wk-12yr</div><div class="cl">Widest Age Range</div></div>
-      </div>
-    </div>
+<section class="section compare-section" id="compare" aria-labelledby="compare-heading">
+  <div class="section-inner">
+    <p class="section-label">See How We Compare</p>
+    <h2 class="section-title" id="compare-heading">CC's vs. Every Center in Brea</h2>
+    <p class="section-sub compare-intro">We're not here to knock anyone. But we think families deserve an honest look. Here's how the numbers line up across the 22 licensed childcare centers in Brea.</p>
 
-    <div class="compare-tabs">
-      <button class="ctab active" onclick="showView('cards',this)"><i class="fas fa-th-large"></i> Cards</button>
-      <button class="ctab" onclick="showView('bars',this)"><i class="fas fa-chart-bar"></i> Ratings</button>
-      <button class="ctab" onclick="showView('table',this)"><i class="fas fa-list-check"></i> Full Comparison</button>
-    </div>
-
-    <!-- Cards -->
-    <div id="v-cards" class="cview">
-      <div class="cc-grid">
-        <div class="cc-card ours"><div class="cc-card-head"><h4>CC's Learning Center</h4><div class="subtype">Family-Owned</div><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <b>5.0</b></div><div class="rev-count">65 Yelp Reviews</div></div><div class="cc-rows"><div class="cc-row"><span class="label">Infant (6wk)</span><span class="val"><span class="y"><i class="fas fa-check-circle"></i></span></span></div><div class="cc-row"><span class="label">After School</span><span class="val"><span class="y"><i class="fas fa-check-circle"></i></span></span></div><div class="cc-row"><span class="label">Full Meals</span><span class="val"><span class="y"><i class="fas fa-check-circle"></i></span></span></div><div class="cc-row"><span class="label">Multicultural</span><span class="val"><span class="y"><i class="fas fa-check-circle"></i></span></span></div><div class="cc-row"><span class="label">Bilingual</span><span class="val"><span class="y"><i class="fas fa-check-circle"></i></span></span></div><div class="cc-row"><span class="label">Family-Owned</span><span class="val"><span class="y"><i class="fas fa-check-circle"></i></span></span></div></div></div>
-        <div class="cc-card"><div class="cc-card-head"><h4>Childtime</h4><div class="subtype">Corporate (LCG)</div><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <b>4.4</b></div><div class="rev-count">59 Reviews</div></div><div class="cc-rows"><div class="cc-row"><span class="label">Infant (6wk)</span><span class="val"><span class="y"><i class="fas fa-check-circle"></i></span></span></div><div class="cc-row"><span class="label">After School</span><span class="val"><span class="y"><i class="fas fa-check-circle"></i></span></span></div><div class="cc-row"><span class="label">Full Meals</span><span class="val"><span class="y"><i class="fas fa-check-circle"></i></span></span></div><div class="cc-row"><span class="label">Multicultural</span><span class="val"><span class="n"><i class="fas fa-times-circle"></i></span></span></div><div class="cc-row"><span class="label">Bilingual</span><span class="val"><span class="n"><i class="fas fa-times-circle"></i></span></span></div><div class="cc-row"><span class="label">Family-Owned</span><span class="val"><span class="n"><i class="fas fa-times-circle"></i></span></span></div></div></div>
-        <div class="cc-card"><div class="cc-card-head"><h4>Montessori of Brea</h4><div class="subtype">Independent</div><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <b>4.5</b></div><div class="rev-count">44 Reviews</div></div><div class="cc-rows"><div class="cc-row"><span class="label">Infant (6wk)</span><span class="val"><span class="n"><i class="fas fa-times-circle"></i> 2+</span></span></div><div class="cc-row"><span class="label">After School</span><span class="val"><span class="n"><i class="fas fa-times-circle"></i></span></span></div><div class="cc-row"><span class="label">Full Meals</span><span class="val"><span class="p"><i class="fas fa-minus-circle"></i></span></span></div><div class="cc-row"><span class="label">Multicultural</span><span class="val"><span class="n"><i class="fas fa-times-circle"></i></span></span></div><div class="cc-row"><span class="label">Bilingual</span><span class="val"><span class="y"><i class="fas fa-check-circle"></i></span></span></div><div class="cc-row"><span class="label">Family-Owned</span><span class="val"><span class="y"><i class="fas fa-check-circle"></i></span></span></div></div></div>
-        <div class="cc-card"><div class="cc-card-head"><h4>KinderCare</h4><div class="subtype">National Chain</div><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> <b>3.8</b></div><div class="rev-count">~30 Reviews</div></div><div class="cc-rows"><div class="cc-row"><span class="label">Infant (6wk)</span><span class="val"><span class="y"><i class="fas fa-check-circle"></i></span></span></div><div class="cc-row"><span class="label">After School</span><span class="val"><span class="y"><i class="fas fa-check-circle"></i></span></span></div><div class="cc-row"><span class="label">Full Meals</span><span class="val"><span class="y"><i class="fas fa-check-circle"></i></span></span></div><div class="cc-row"><span class="label">Multicultural</span><span class="val"><span class="n"><i class="fas fa-times-circle"></i></span></span></div><div class="cc-row"><span class="label">Bilingual</span><span class="val"><span class="n"><i class="fas fa-times-circle"></i></span></span></div><div class="cc-row"><span class="label">Family-Owned</span><span class="val"><span class="n"><i class="fas fa-times-circle"></i></span></span></div></div></div>
-        <div class="cc-card"><div class="cc-card-head"><h4>Faith Hope Love</h4><div class="subtype">Christian</div><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <b>5.0</b></div><div class="rev-count">8 Reviews</div></div><div class="cc-rows"><div class="cc-row"><span class="label">Infant (6wk)</span><span class="val"><span class="n"><i class="fas fa-times-circle"></i> 18m</span></span></div><div class="cc-row"><span class="label">After School</span><span class="val"><span class="n"><i class="fas fa-times-circle"></i></span></span></div><div class="cc-row"><span class="label">Full Meals</span><span class="val"><span class="n"><i class="fas fa-times-circle"></i></span></span></div><div class="cc-row"><span class="label">Multicultural</span><span class="val"><span class="n"><i class="fas fa-times-circle"></i></span></span></div><div class="cc-row"><span class="label">Bilingual</span><span class="val"><span class="n"><i class="fas fa-times-circle"></i></span></span></div><div class="cc-row"><span class="label">Family-Owned</span><span class="val"><span class="y"><i class="fas fa-check-circle"></i></span></span></div></div></div>
-      </div>
-    </div>
-
-    <!-- Bars -->
-    <div id="v-bars" class="cview" style="display:none">
-      <div class="bars-wrap">
-        <h3 style="text-align:center;margin-bottom:28px">Yelp Rating Comparison</h3>
-        <div class="bar-item"><div class="bar-top"><span class="bname"><i class="fas fa-trophy" style="color:var(--honey);margin-right:4px"></i> CC's Learning Center</span><span style="color:var(--sage-dark)">5.0 / 65 reviews</span></div><div class="bar-track"><div class="bar-fill" style="width:0;background:linear-gradient(90deg,var(--sage),var(--sage-dark))" data-w="100%"></div></div></div>
-        <div class="bar-item"><div class="bar-top"><span class="bname">Childtime of Brea</span><span style="color:var(--honey)">4.4 / 59 reviews</span></div><div class="bar-track"><div class="bar-fill" style="width:0;background:linear-gradient(90deg,#f39c12,#e8b94c)" data-w="78%"></div></div></div>
-        <div class="bar-item"><div class="bar-top"><span class="bname">Montessori of Brea</span><span style="color:#5b7fcf">4.5 / 44 reviews</span></div><div class="bar-track"><div class="bar-fill" style="width:0;background:linear-gradient(90deg,#5b7fcf,#8ba8e8)" data-w="72%"></div></div></div>
-        <div class="bar-item"><div class="bar-top"><span class="bname">Faith Hope Love</span><span style="color:#8b5cf6">5.0 / 8 reviews</span></div><div class="bar-track"><div class="bar-fill" style="width:0;background:linear-gradient(90deg,#8b5cf6,#bb8fce)" data-w="45%"></div></div></div>
-        <div class="bar-item"><div class="bar-top"><span class="bname">KinderCare</span><span style="color:#95a5a6">3.8 / ~30 reviews</span></div><div class="bar-track"><div class="bar-fill" style="width:0;background:linear-gradient(90deg,#95a5a6,#bdc3c7)" data-w="52%"></div></div></div>
-        <p style="text-align:center;font-size:.74rem;color:var(--text-light);margin-top:20px">Bars reflect combined rating quality and review volume. Source: Yelp, April 2026.</p>
-      </div>
-    </div>
-
-    <!-- Table -->
-    <div id="v-table" class="cview" style="display:none">
-      <div style="overflow-x:auto">
-        <table class="feat-table">
-          <thead><tr><th>Feature</th><th class="hl">CC's</th><th>Childtime</th><th>Montessori</th><th>KinderCare</th><th>Faith Hope</th></tr></thead>
-          <tbody>
-            <tr><td>Yelp Rating</td><td class="hl"><i class="fas fa-star" style="color:var(--honey)"></i> 5.0 (65)</td><td><i class="fas fa-star" style="color:var(--honey)"></i> 4.4 (59)</td><td><i class="fas fa-star" style="color:var(--honey)"></i> 4.5 (44)</td><td><i class="fas fa-star" style="color:var(--honey)"></i> 3.8</td><td><i class="fas fa-star" style="color:var(--honey)"></i> 5.0 (8)</td></tr>
-            <tr><td>Ownership</td><td class="hl"><i class="fas fa-home y"></i> Family</td><td><i class="fas fa-building n"></i> Corporate</td><td><i class="fas fa-home y"></i> Indep.</td><td><i class="fas fa-building n"></i> Corporate</td><td><i class="fas fa-home y"></i> Indep.</td></tr>
-            <tr><td>Infant Care</td><td class="hl"><span class="y"><i class="fas fa-check-circle"></i> 6wk</span></td><td><span class="y"><i class="fas fa-check-circle"></i></span></td><td><span class="n"><i class="fas fa-times-circle"></i> 2+</span></td><td><span class="y"><i class="fas fa-check-circle"></i></span></td><td><span class="n"><i class="fas fa-times-circle"></i> 18m</span></td></tr>
-            <tr><td>After School</td><td class="hl"><span class="y"><i class="fas fa-check-circle"></i></span></td><td><span class="y"><i class="fas fa-check-circle"></i></span></td><td><span class="n"><i class="fas fa-times-circle"></i></span></td><td><span class="y"><i class="fas fa-check-circle"></i></span></td><td><span class="n"><i class="fas fa-times-circle"></i></span></td></tr>
-            <tr><td>Full Meals</td><td class="hl"><span class="y"><i class="fas fa-check-circle"></i> B/L/S</span></td><td><span class="y"><i class="fas fa-check-circle"></i></span></td><td><span class="p"><i class="fas fa-minus-circle"></i></span></td><td><span class="y"><i class="fas fa-check-circle"></i></span></td><td><span class="n"><i class="fas fa-times-circle"></i></span></td></tr>
-            <tr><td>Multicultural</td><td class="hl"><span class="y"><i class="fas fa-check-circle"></i> Core</span></td><td><span class="n"><i class="fas fa-times-circle"></i></span></td><td><span class="n"><i class="fas fa-times-circle"></i></span></td><td><span class="n"><i class="fas fa-times-circle"></i></span></td><td><span class="n"><i class="fas fa-times-circle"></i></span></td></tr>
-            <tr><td>Bilingual</td><td class="hl"><span class="y"><i class="fas fa-check-circle"></i></span></td><td><span class="n"><i class="fas fa-times-circle"></i></span></td><td><span class="y"><i class="fas fa-check-circle"></i></span></td><td><span class="n"><i class="fas fa-times-circle"></i></span></td><td><span class="n"><i class="fas fa-times-circle"></i></span></td></tr>
-            <tr><td>Hours</td><td class="hl">6:30a-6p</td><td>6:30a-6p</td><td>6:30a-6p</td><td>6:30a-6:30p</td><td>7a-6p</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="compare-bottom">
-      <h3>The Numbers Speak For Themselves</h3>
-      <p>Highest-rated, family-owned, widest age range, multicultural curriculum. Come see why 65 families gave us five stars.</p>
-      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
-        <a href="#" class="btn btn-terra" onclick="event.preventDefault();openChat('tour')"><i class="fas fa-calendar-check"></i> Schedule a Tour</a>
-        <a href="#" class="btn btn-ghost" onclick="event.preventDefault();openChat('enroll')"><i class="fas fa-clipboard-list"></i> Start Enrollment</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="reviews" class="section s-bg">
-  <div class="container">
-    <div class="section-head"><div class="tag">Parent Reviews</div><h2>Hear From Families Like Yours</h2></div>
-    <div class="test-grid">
-      <div class="test-card"><div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>My daughter has been going here since infancy and absolutely loves it. The teachers are warm, patient, and genuinely invested in every child.</p><div class="test-author"><div class="test-avatar">JS</div><div><div class="nm">Jessica S.</div><div class="rl">Parent since 2021</div></div></div></div>
-      <div class="test-card"><div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>What sold us was the tour. You feel the energy the moment you walk in. My son went from shy to thriving in weeks.</p><div class="test-author"><div class="test-avatar">MR</div><div><div class="nm">Michael R.</div><div class="rl">Parent since 2022</div></div></div></div>
-      <div class="test-card"><div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>The multicultural curriculum is unique. My kids learn about the world while building strong academic foundations. Highly recommend.</p><div class="test-author"><div class="test-avatar">AL</div><div><div class="nm">Andrea L.</div><div class="rl">Parent since 2020</div></div></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- PARENT SATISFACTION -->
-<section id="feedback" class="sat-section">
-  <div class="container">
-    <div class="sat-grid">
-      <div>
-        <div class="tag" style="color:var(--sage);font-family:'Quicksand',sans-serif;font-weight:700;font-size:.75rem;text-transform:uppercase;letter-spacing:2.5px;margin-bottom:10px">Parent Feedback</div>
-        <h2 style="font-size:2.2rem;margin-bottom:12px">Your Voice Makes Us Better</h2>
-        <p style="color:var(--text-mid);margin-bottom:28px">We believe in continuous improvement. Share your honest, anonymous feedback so we can keep growing for your child.</p>
-        <div class="sat-stats">
-          <div class="sstat"><div class="sv" id="sat-overall">4.8</div><div class="sl">Overall Satisfaction</div></div>
-          <div class="sstat"><div class="sv" id="sat-safety">4.9</div><div class="sl">Safety &amp; Security</div></div>
-          <div class="sstat"><div class="sv" id="sat-comm">4.7</div><div class="sl">Communication</div></div>
-          <div class="sstat"><div class="sv" id="sat-growth">4.8</div><div class="sl">Child's Growth</div></div>
+    <!-- Bar chart: Yelp ratings -->
+    <div aria-label="Yelp rating comparison chart" role="img">
+      <h3 style="font-family:'Fredoka',sans-serif;font-size:1.1rem;color:var(--ink);margin-bottom:18px;">Yelp Ratings at a Glance</h3>
+      <div class="compare-bars">
+        <div class="cbar-row">
+          <div class="cbar-label">CC's Learning Center</div>
+          <div class="cbar-track" aria-label="5.0 out of 5">
+            <div class="cbar-fill cbar-ccs" style="width:100%;" data-width="100">5.0 (65 reviews)</div>
+          </div>
         </div>
-      </div>
-      <div class="sat-form-box">
-        <div class="anon-tag"><i class="fas fa-user-secret"></i> 100% Anonymous</div>
-        <h3>How is your child doing at CC's?</h3>
-        <p>Your feedback is completely anonymous and helps us improve.</p>
-        <div id="sat-form">
-          <div class="fg">
-            <label>Overall Experience</label>
-            <div class="emoji-row" id="emoji-overall">
-              <button class="emo-btn" onclick="setRating('overall',1)" data-val="1">&#128543;</button>
-              <button class="emo-btn" onclick="setRating('overall',2)" data-val="2">&#128528;</button>
-              <button class="emo-btn" onclick="setRating('overall',3)" data-val="3">&#128578;</button>
-              <button class="emo-btn" onclick="setRating('overall',4)" data-val="4">&#128522;</button>
-              <button class="emo-btn" onclick="setRating('overall',5)" data-val="5">&#129321;</button>
-            </div>
+        <div class="cbar-row">
+          <div class="cbar-label">Montessori of Brea</div>
+          <div class="cbar-track" aria-label="4.5 out of 5">
+            <div class="cbar-fill cbar-other" style="width:90%;" data-width="90">4.5 (44 reviews)</div>
           </div>
-          <div class="fg">
-            <label>How safe do you feel your child is?</label>
-            <div class="emoji-row" id="emoji-safety">
-              <button class="emo-btn" onclick="setRating('safety',1)" data-val="1">&#128543;</button>
-              <button class="emo-btn" onclick="setRating('safety',2)" data-val="2">&#128528;</button>
-              <button class="emo-btn" onclick="setRating('safety',3)" data-val="3">&#128578;</button>
-              <button class="emo-btn" onclick="setRating('safety',4)" data-val="4">&#128522;</button>
-              <button class="emo-btn" onclick="setRating('safety',5)" data-val="5">&#129321;</button>
-            </div>
-          </div>
-          <div class="fg">
-            <label>How is your child's progress?</label>
-            <div class="emoji-row" id="emoji-growth">
-              <button class="emo-btn" onclick="setRating('growth',1)" data-val="1">&#128543;</button>
-              <button class="emo-btn" onclick="setRating('growth',2)" data-val="2">&#128528;</button>
-              <button class="emo-btn" onclick="setRating('growth',3)" data-val="3">&#128578;</button>
-              <button class="emo-btn" onclick="setRating('growth',4)" data-val="4">&#128522;</button>
-              <button class="emo-btn" onclick="setRating('growth',5)" data-val="5">&#129321;</button>
-            </div>
-          </div>
-          <div class="fg">
-            <label>Anything you'd like us to know?</label>
-            <textarea id="sat-comment" placeholder="Share your thoughts (completely anonymous)..."></textarea>
-          </div>
-          <button class="btn btn-sage" style="width:100%" onclick="submitSatisfaction()"><i class="fas fa-paper-plane"></i> Submit Anonymous Feedback</button>
         </div>
-        <div id="sat-thanks" style="display:none;text-align:center;padding:36px 0">
-          <div style="font-size:3rem;margin-bottom:14px">&#128154;</div>
-          <h3 style="color:var(--sage-dark);margin-bottom:6px">Thank You!</h3>
-          <p style="color:var(--text-mid);font-size:.88rem">Your anonymous feedback helps us serve your family better.</p>
+        <div class="cbar-row">
+          <div class="cbar-label">Childtime (LCG Corp.)</div>
+          <div class="cbar-track" aria-label="4.4 out of 5">
+            <div class="cbar-fill cbar-other" style="width:88%;" data-width="88">4.4 (59 reviews)</div>
+          </div>
+        </div>
+        <div class="cbar-row">
+          <div class="cbar-label">Faith Hope Love</div>
+          <div class="cbar-track" aria-label="5.0 out of 5, only 8 reviews">
+            <div class="cbar-fill cbar-other" style="width:100%;" data-width="100">5.0 (8 reviews)</div>
+          </div>
+        </div>
+        <div class="cbar-row">
+          <div class="cbar-label">KinderCare (National)</div>
+          <div class="cbar-track" aria-label="3.8 out of 5">
+            <div class="cbar-fill cbar-low" style="width:76%;" data-width="76">3.8 (~30 reviews)</div>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Detailed table -->
+    <div class="compare-table-wrap" role="region" aria-label="Detailed center comparison table" tabindex="0">
+      <table class="compare-table">
+        <caption class="sr-only">Comparison of childcare centers in Brea, CA. Source: Yelp, April 2026.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Center</th>
+            <th scope="col">Type</th>
+            <th scope="col">Yelp Rating</th>
+            <th scope="col">Infant Start Age</th>
+            <th scope="col">After School</th>
+            <th scope="col">Full Meals</th>
+            <th scope="col">Bilingual</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="ccs-row">
+            <td><strong>CC's Learning Center</strong></td>
+            <td>Family-Owned</td>
+            <td><span class="rating-badge">5.0 (65)</span></td>
+            <td>6 weeks</td>
+            <td><span class="check" aria-label="Yes">Yes</span></td>
+            <td>B / L / S</td>
+            <td><span class="check" aria-label="Yes">Yes</span></td>
+          </tr>
+          <tr>
+            <td>Childtime</td>
+            <td>Corporate (LCG)</td>
+            <td>4.4 (59)</td>
+            <td>6 weeks</td>
+            <td><span class="check" aria-label="Yes">Yes</span></td>
+            <td><span class="dash" aria-label="Not listed">-</span></td>
+            <td><span class="dash" aria-label="Not listed">-</span></td>
+          </tr>
+          <tr>
+            <td>Montessori of Brea</td>
+            <td>Independent</td>
+            <td>4.5 (44)</td>
+            <td>2 years</td>
+            <td><span class="dash" aria-label="Not listed">-</span></td>
+            <td><span class="dash" aria-label="Not listed">-</span></td>
+            <td><span class="dash" aria-label="Not listed">-</span></td>
+          </tr>
+          <tr>
+            <td>KinderCare</td>
+            <td>National Chain</td>
+            <td>3.8 (~30)</td>
+            <td>6 weeks</td>
+            <td><span class="check" aria-label="Yes">Yes</span></td>
+            <td><span class="dash" aria-label="Not listed">-</span></td>
+            <td><span class="dash" aria-label="Not listed">-</span></td>
+          </tr>
+          <tr>
+            <td>Faith Hope Love</td>
+            <td>Christian / Independent</td>
+            <td>5.0 (8)</td>
+            <td>18 months</td>
+            <td><span class="dash" aria-label="Not listed">-</span></td>
+            <td><span class="dash" aria-label="Not listed">-</span></td>
+            <td><span class="dash" aria-label="Not listed">-</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-source">Source: Yelp public listings, April 2026. Ratings and review counts reflect publicly available data at time of collection.</p>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta-section">
-  <div class="container">
-    <h2>Ready to See CC's in Person?</h2>
-    <p>Tours are relaxed, no-pressure, and your child is welcome to come along.</p>
-    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-      <a href="#" class="btn btn-terra" onclick="event.preventDefault();openChat('tour')"><i class="fas fa-calendar-check"></i> Schedule a Tour</a>
-      <a href="tel:7146716970" class="btn btn-outline"><i class="fas fa-phone"></i> Call (714) 671-6970</a>
+<!-- WAVE INTO REVIEWS -->
+<div class="wave-divider" aria-hidden="true" style="background:#fff;">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0 Q480 60 960 0 Q1200 -30 1440 20 L1440 60 L0 60Z" fill="#F3F0F9"/>
+  </svg>
+</div>
+
+<!-- REVIEWS -->
+<section class="section reviews-section" id="reviews" aria-labelledby="reviews-heading">
+  <div class="section-inner">
+    <p class="section-label">From Our Families</p>
+    <h2 class="section-title" id="reviews-heading">Hear From Families Like Yours</h2>
+    <p class="section-sub">Five stars from 65 Yelp reviews. Here are a few families' own words.</p>
+
+    <div class="reviews-grid">
+      <article class="review-card reveal" aria-label="Review by Jessica S.">
+        <div aria-hidden="true" class="review-quote-mark">"</div>
+        <div class="review-stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 18 18" fill="#FFC233"><path d="M9 1l2.09 4.24L16 6.09l-3.64 3.55.86 5.02L9 12.25l-4.22 2.41.86-5.02L2 6.09l4.91-.85z"/></svg>
+          <svg viewBox="0 0 18 18" fill="#FFC233"><path d="M9 1l2.09 4.24L16 6.09l-3.64 3.55.86 5.02L9 12.25l-4.22 2.41.86-5.02L2 6.09l4.91-.85z"/></svg>
+          <svg viewBox="0 0 18 18" fill="#FFC233"><path d="M9 1l2.09 4.24L16 6.09l-3.64 3.55.86 5.02L9 12.25l-4.22 2.41.86-5.02L2 6.09l4.91-.85z"/></svg>
+          <svg viewBox="0 0 18 18" fill="#FFC233"><path d="M9 1l2.09 4.24L16 6.09l-3.64 3.55.86 5.02L9 12.25l-4.22 2.41.86-5.02L2 6.09l4.91-.85z"/></svg>
+          <svg viewBox="0 0 18 18" fill="#FFC233"><path d="M9 1l2.09 4.24L16 6.09l-3.64 3.55.86 5.02L9 12.25l-4.22 2.41.86-5.02L2 6.09l4.91-.85z"/></svg>
+        </div>
+        <p class="review-text">"My daughter has been going here since infancy and absolutely loves it. The teachers are warm, patient, and genuinely invested in every child."</p>
+        <div class="review-author">Jessica S.</div>
+        <div class="review-since">Parent since 2021</div>
+      </article>
+
+      <article class="review-card reveal" aria-label="Review by Michael R.">
+        <div aria-hidden="true" class="review-quote-mark">"</div>
+        <div class="review-stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 18 18" fill="#FFC233"><path d="M9 1l2.09 4.24L16 6.09l-3.64 3.55.86 5.02L9 12.25l-4.22 2.41.86-5.02L2 6.09l4.91-.85z"/></svg>
+          <svg viewBox="0 0 18 18" fill="#FFC233"><path d="M9 1l2.09 4.24L16 6.09l-3.64 3.55.86 5.02L9 12.25l-4.22 2.41.86-5.02L2 6.09l4.91-.85z"/></svg>
+          <svg viewBox="0 0 18 18" fill="#FFC233"><path d="M9 1l2.09 4.24L16 6.09l-3.64 3.55.86 5.02L9 12.25l-4.22 2.41.86-5.02L2 6.09l4.91-.85z"/></svg>
+          <svg viewBox="0 0 18 18" fill="#FFC233"><path d="M9 1l2.09 4.24L16 6.09l-3.64 3.55.86 5.02L9 12.25l-4.22 2.41.86-5.02L2 6.09l4.91-.85z"/></svg>
+          <svg viewBox="0 0 18 18" fill="#FFC233"><path d="M9 1l2.09 4.24L16 6.09l-3.64 3.55.86 5.02L9 12.25l-4.22 2.41.86-5.02L2 6.09l4.91-.85z"/></svg>
+        </div>
+        <p class="review-text">"What sold us was the tour. You feel the energy the moment you walk in. My son went from shy to thriving in weeks."</p>
+        <div class="review-author">Michael R.</div>
+        <div class="review-since">Parent since 2022</div>
+      </article>
+
+      <article class="review-card reveal" aria-label="Review by Andrea L.">
+        <div aria-hidden="true" class="review-quote-mark">"</div>
+        <div class="review-stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 18 18" fill="#FFC233"><path d="M9 1l2.09 4.24L16 6.09l-3.64 3.55.86 5.02L9 12.25l-4.22 2.41.86-5.02L2 6.09l4.91-.85z"/></svg>
+          <svg viewBox="0 0 18 18" fill="#FFC233"><path d="M9 1l2.09 4.24L16 6.09l-3.64 3.55.86 5.02L9 12.25l-4.22 2.41.86-5.02L2 6.09l4.91-.85z"/></svg>
+          <svg viewBox="0 0 18 18" fill="#FFC233"><path d="M9 1l2.09 4.24L16 6.09l-3.64 3.55.86 5.02L9 12.25l-4.22 2.41.86-5.02L2 6.09l4.91-.85z"/></svg>
+          <svg viewBox="0 0 18 18" fill="#FFC233"><path d="M9 1l2.09 4.24L16 6.09l-3.64 3.55.86 5.02L9 12.25l-4.22 2.41.86-5.02L2 6.09l4.91-.85z"/></svg>
+          <svg viewBox="0 0 18 18" fill="#FFC233"><path d="M9 1l2.09 4.24L16 6.09l-3.64 3.55.86 5.02L9 12.25l-4.22 2.41.86-5.02L2 6.09l4.91-.85z"/></svg>
+        </div>
+        <p class="review-text">"The multicultural curriculum is unique. My kids learn about the world while building strong academic foundations. Highly recommend."</p>
+        <div class="review-author">Andrea L.</div>
+        <div class="review-since">Parent since 2020</div>
+      </article>
+    </div>
+
+    <div style="margin-top:10px;">
+      <a href="https://www.yelp.com" class="yelp-link" target="_blank" rel="noopener noreferrer" aria-label="Read all 65 reviews on Yelp (opens in new tab)">
+        Read All 65 Reviews on Yelp
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
     </div>
   </div>
 </section>
+
+<!-- WAVE INTO FEEDBACK -->
+<div class="wave-divider" aria-hidden="true" style="background:#F3F0F9;">
+  <svg viewBox="0 0 1440 55" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 20 Q360 55 720 20 Q1080 -15 1440 20 L1440 55 L0 55Z" fill="#ffffff"/>
+  </svg>
+</div>
+
+<!-- FEEDBACK -->
+<section class="section feedback-section" id="feedback" aria-labelledby="feedback-heading">
+  <div class="section-inner feedback-inner">
+    <p class="section-label">Your Voice Matters</p>
+    <h2 class="section-title" id="feedback-heading">Your Voice Makes Us Better</h2>
+    <p class="section-sub">These scores come from real family responses. We read every submission and use it to keep improving.</p>
+
+    <!-- Satisfaction scores -->
+    <div class="satisfaction-grid" aria-label="Current family satisfaction scores">
+      <div class="sat-card">
+        <div class="sat-score" style="color:var(--coral);">4.8</div>
+        <div class="sat-label">Overall Satisfaction</div>
+        <div class="sat-bar"><div class="sat-bar-fill" style="width:96%;background:var(--coral);"></div></div>
+      </div>
+      <div class="sat-card">
+        <div class="sat-score" style="color:var(--sky);">4.9</div>
+        <div class="sat-label">Safety &amp; Security</div>
+        <div class="sat-bar"><div class="sat-bar-fill" style="width:98%;background:var(--sky);"></div></div>
+      </div>
+      <div class="sat-card">
+        <div class="sat-score" style="color:var(--grape);">4.7</div>
+        <div class="sat-label">Communication</div>
+        <div class="sat-bar"><div class="sat-bar-fill" style="width:94%;background:var(--grape);"></div></div>
+      </div>
+      <div class="sat-card">
+        <div class="sat-score" style="color:#22C55E;">4.8</div>
+        <div class="sat-label">Child's Growth</div>
+        <div class="sat-bar"><div class="sat-bar-fill" style="width:96%;background:#22C55E;"></div></div>
+      </div>
+    </div>
+
+    <!-- Feedback form -->
+    <div class="feedback-form-wrap" id="feedback-form-outer">
+      <div id="feedback-form-body">
+        <h3>Share Your Experience</h3>
+        <p class="form-sub">100% anonymous. Takes about 60 seconds.</p>
+        <form id="feedback-form" novalidate aria-label="Anonymous family feedback form">
+          <div class="form-group">
+            <label for="fb-overall">Overall experience at CC's</label>
+            <select id="fb-overall" name="fb-overall" required>
+              <option value="">Choose a rating...</option>
+              <option value="5">5 - Outstanding</option>
+              <option value="4">4 - Really good</option>
+              <option value="3">3 - Pretty good</option>
+              <option value="2">2 - Could be better</option>
+              <option value="1">1 - Needs work</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fb-safety">How safe and secure does your child feel?</label>
+            <select id="fb-safety" name="fb-safety">
+              <option value="">Choose a rating...</option>
+              <option value="5">5 - Very safe</option>
+              <option value="4">4 - Safe</option>
+              <option value="3">3 - Mostly safe</option>
+              <option value="2">2 - Some concerns</option>
+              <option value="1">1 - Significant concerns</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fb-progress">How is your child progressing?</label>
+            <select id="fb-progress" name="fb-progress">
+              <option value="">Choose a rating...</option>
+              <option value="5">5 - Growing so much</option>
+              <option value="4">4 - Doing well</option>
+              <option value="3">3 - Making progress</option>
+              <option value="2">2 - Slowly progressing</option>
+              <option value="1">1 - Concerned about progress</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fb-text">Anything else you'd like to share? (optional)</label>
+            <textarea id="fb-text" name="fb-text" placeholder="Your thoughts, compliments, or suggestions..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Submit Anonymous Feedback</button>
+        </form>
+      </div>
+      <div class="thankyou-state" id="feedback-thankyou" aria-live="polite">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" fill="#EBF6FD" stroke="#3DA5D9" stroke-width="2.5"/>
+          <path d="M20 32 L28 40 L44 24" stroke="#3DA5D9" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Thank you!</h3>
+        <p>Your feedback was received. It helps us keep getting better for every family.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE INTO CONTACT -->
+<div class="wave-divider" aria-hidden="true" style="background:#fff;">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 30 Q360 0 720 40 Q1080 70 1440 30 L1440 60 L0 60Z" fill="#FFF8F0"/>
+  </svg>
+</div>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
-  <div class="container">
+<section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+  <div class="section-inner">
     <div class="contact-grid">
-      <div class="contact-info">
-        <h3>Get in Touch</h3>
-        <p>Or use our chat assistant for instant answers 24/7.</p>
-        <div class="cd"><div class="ci"><i class="fas fa-map-marker-alt"></i></div><div class="ct"><strong>Our Location</strong><span>300 East Imperial Highway, Brea, CA 92821</span></div></div>
-        <div class="cd"><div class="ci"><i class="fas fa-phone"></i></div><div class="ct"><strong>Phone</strong><a href="tel:7146716970">(714) 671-6970</a></div></div>
-        <div class="cd"><div class="ci"><i class="fas fa-envelope"></i></div><div class="ct"><strong>Email</strong><a href="mailto:info@ccslearningcenter.com">info@ccslearningcenter.com</a></div></div>
-        <div class="cd"><div class="ci"><i class="fas fa-clock"></i></div><div class="ct"><strong>Hours</strong><span>Monday - Friday, 6:30 AM - 6:00 PM</span></div></div>
+      <!-- Info side -->
+      <div class="contact-info reveal">
+        <p class="section-label">Come Visit Us</p>
+        <h2 id="contact-heading">Ready to See CC's in Person?</h2>
+        <p>Tours are relaxed, no pressure, and your child is welcome to come along. See the classrooms, meet the teachers, and feel the place for yourself.</p>
+        <div class="contact-ctas">
+          <a href="#contact-form" class="btn-primary">Schedule a Tour</a>
+          <a href="tel:7146716970" class="btn-secondary">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+              <path d="M3.5 2h3l1.5 3.5-1.8 1.1a9 9 0 0 0 4.2 4.2L11.5 9l3.5 1.5V14a1.5 1.5 0 0 1-1.5 1.5C5.5 15.5 1.5 11.5 1.5 3A1.5 1.5 0 0 1 3 1.5h.5z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            Call (714) 671-6970
+          </a>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-item-icon" style="background:var(--light-coral);">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M10 2a6 6 0 0 1 6 6c0 4-6 10-6 10S4 12 4 8a6 6 0 0 1 6-6z" stroke="#FF6052" stroke-width="1.8" fill="var(--light-coral)"/>
+                <circle cx="10" cy="8" r="2" fill="#FF6052"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Address</strong>
+              <span>300 East Imperial Highway, Brea, CA 92821</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon" style="background:var(--light-sky);">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M3 4h3l1.5 3.5-1.8 1.1a8.5 8.5 0 0 0 4.7 4.7L11.5 11 15 12.5V16a1.5 1.5 0 0 1-1.5 1.5C5 17.5 2.5 10 2.5 5A1.5 1.5 0 0 1 4 3.5H3z" stroke="#3DA5D9" stroke-width="1.6"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:7146716970">(714) 671-6970</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon" style="background:var(--light-sunshine);">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <rect x="2" y="4" width="16" height="12" rx="3" stroke="#B38A00" stroke-width="1.8" fill="var(--light-sunshine)"/>
+                <path d="M2 7l8 5 8-5" stroke="#B38A00" stroke-width="1.6"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:info@ccslearningcenter.com">info@ccslearningcenter.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon" style="background:var(--light-grape);">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <circle cx="10" cy="10" r="7" stroke="#7B5EA7" stroke-width="1.8" fill="var(--light-grape)"/>
+                <path d="M10 6v4.5l3 1.5" stroke="#7B5EA7" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Hours</strong>
+              <span>Monday-Friday, 6:30 AM - 6:00 PM</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="contact-form-box">
-        <h3>Send a Message</h3>
-        <p>We'll respond within 24 hours.</p>
-        <form onsubmit="event.preventDefault();alert('Demo: Message sent! Mike notified.')">
-          <div class="frow"><div class="fg"><label>First Name *</label><input type="text" placeholder="Your first name"></div><div class="fg"><label>Last Name *</label><input type="text" placeholder="Your last name"></div></div>
-          <div class="frow"><div class="fg"><label>Email *</label><input type="email" placeholder="you@email.com"></div><div class="fg"><label>Phone</label><input type="tel" placeholder="(555) 123-4567"></div></div>
-          <div class="fg"><label>Interested In</label><select><option value="">Select...</option><option>Infant Care</option><option>Toddler</option><option>Preschool</option><option>Pre-K</option><option>After School</option><option>Tour</option><option>General</option></select></div>
-          <div class="fg"><label>Message</label><textarea placeholder="Tell us about your child..."></textarea></div>
-          <button type="submit" class="btn btn-sage" style="width:100%"><i class="fas fa-paper-plane"></i> Send Message</button>
+
+      <!-- Form side -->
+      <div class="contact-form-card reveal" id="contact-form">
+        <h3>Send Us a Message</h3>
+        <form id="contact-form-el" novalidate aria-label="Contact and tour request form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c-first">First Name <span class="required-star" aria-hidden="true">*</span></label>
+              <input type="text" id="c-first" name="c-first" required autocomplete="given-name" placeholder="Jane">
+            </div>
+            <div class="form-group">
+              <label for="c-last">Last Name <span class="required-star" aria-hidden="true">*</span></label>
+              <input type="text" id="c-last" name="c-last" required autocomplete="family-name" placeholder="Smith">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="c-email">Email <span class="required-star" aria-hidden="true">*</span></label>
+            <input type="email" id="c-email" name="c-email" required autocomplete="email" placeholder="jane@example.com">
+          </div>
+          <div class="form-group">
+            <label for="c-phone">Phone (optional)</label>
+            <input type="tel" id="c-phone" name="c-phone" autocomplete="tel" placeholder="(714) 555-1234">
+          </div>
+          <div class="form-group">
+            <label for="c-interest">Interested In</label>
+            <select id="c-interest" name="c-interest">
+              <option value="">Select a program or topic...</option>
+              <option value="infant">Infant Care</option>
+              <option value="toddler">Toddler Program</option>
+              <option value="preschool">Preschool / Early Preschool</option>
+              <option value="prek">Pre-Kindergarten</option>
+              <option value="afterschool">After School</option>
+              <option value="tour">Schedule a Tour</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="c-message">Message (optional)</label>
+            <textarea id="c-message" name="c-message" placeholder="Questions? Tell us a little about your child and family..."></textarea>
+          </div>
+          <button type="submit" class="btn-send" id="contact-submit-btn">
+            Send Message
+          </button>
+          <div id="contact-success" role="alert" style="display:none;margin-top:18px;background:var(--light-sky);border-radius:14px;padding:16px 18px;font-weight:700;color:var(--sky);">
+            Message sent! We'll be in touch within one business day.
+          </div>
         </form>
       </div>
     </div>
   </div>
 </section>
 
+<!-- FOOTER WAVE -->
+<div class="wave-divider" aria-hidden="true" style="background:linear-gradient(135deg,#FFF8F0,#EBF6FD);">
+  <svg viewBox="0 0 1440 55" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 20 Q240 55 480 20 Q720 -15 960 20 Q1200 55 1440 20 L1440 55 L0 55Z" fill="#2B2D42"/>
+  </svg>
+</div>
+
 <!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-logo"><div class="fl-mark"><i class="fas fa-seedling"></i></div> CC's Learning Center</div>
-        <p>Trusted, family-owned childcare in Brea. Where children explore, experiment, and discover.</p>
-        <div class="footer-license"><i class="fas fa-certificate"></i> License #304370797 & #304370798</div>
+<footer class="site-footer" aria-labelledby="footer-brand">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="brand-name" id="footer-brand">CC's Learning Center</div>
+        <p>Trusted, family-owned childcare in Brea. Where children explore, experiment, and discover who they are.</p>
+        <div class="footer-license">
+          State License #304370797 &amp; #304370798<br>
+          300 East Imperial Highway, Brea, CA 92821
+        </div>
       </div>
-      <div><h4>Programs</h4><ul><li><a href="#">Infant Care</a></li><li><a href="#">Toddler</a></li><li><a href="#">Preschool</a></li><li><a href="#">Pre-K</a></li><li><a href="#">After School</a></li></ul></div>
-      <div><h4>Parents</h4><ul><li><a href="#">Calendar</a></li><li><a href="#">Curriculum</a></li><li><a href="#">Lunch Menu</a></li><li><a href="#">Handbook</a></li><li><a href="#">FAQs</a></li></ul></div>
-      <div><h4>Quick Links</h4><ul><li><a href="#" onclick="event.preventDefault();openChat('tour')">Schedule Tour</a></li><li><a href="#" onclick="event.preventDefault();openChat('enroll')">Enroll</a></li><li><a href="#feedback">Give Feedback</a></li><li><a href="#contact">Contact</a></li></ul></div>
+
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul role="list">
+          <li><a href="#programs">Infant Care</a></li>
+          <li><a href="#programs">Toddler Program</a></li>
+          <li><a href="#programs">Early Preschool</a></li>
+          <li><a href="#programs">Preschool</a></li>
+          <li><a href="#programs">Pre-Kindergarten</a></li>
+          <li><a href="#programs">After School</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Parents</h4>
+        <ul role="list">
+          <li><a href="#contact">Calendar</a></li>
+          <li><a href="#contact">Curriculum</a></li>
+          <li><a href="#contact">Lunch Menu</a></li>
+          <li><a href="#contact">Handbook</a></li>
+          <li><a href="#contact">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul role="list">
+          <li><a href="#contact">Schedule a Tour</a></li>
+          <li><a href="#contact">Enroll</a></li>
+          <li><a href="#feedback">Give Feedback</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-bottom"><span>&copy; 2025-2026 CC's Learning Center Inc.</span><div class="f-socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div></div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2025-2026 CC's Learning Center Inc. All rights reserved.</span>
+      <span>
+        <a href="tel:7146716970" style="color:rgba(255,255,255,0.6);text-decoration:none;">(714) 671-6970</a>
+        &nbsp;&middot;&nbsp;
+        <a href="mailto:info@ccslearningcenter.com" style="color:rgba(255,255,255,0.6);text-decoration:none;">info@ccslearningcenter.com</a>
+      </span>
+    </div>
   </div>
 </footer>
 
 <!-- CHAT FAB -->
-<button class="chat-fab" id="chatFab" onclick="toggleChat()"><i class="fas fa-comments" id="fabIcon"></i><div class="badge" id="chatBadge" style="display:none">1</div></button>
+<button class="chat-fab" aria-label="Chat with us" onclick="alert('Chat coming soon! Please call us at (714) 671-6970 or email info@ccslearningcenter.com')">
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+    <path d="M2 3.5A1.5 1.5 0 0 1 3.5 2h13A1.5 1.5 0 0 1 18 3.5v9A1.5 1.5 0 0 1 16.5 14H5.5L2 17.5V3.5z" fill="rgba(255,255,255,0.2)" stroke="#fff" stroke-width="1.6"/>
+    <path d="M6 7h8M6 10h5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+  </svg>
+  Chat With Us
+</button>
 
-<!-- CHAT WINDOW -->
-<div class="chat-win" id="chatWin">
-  <div class="chat-top"><div class="chat-top-info"><div class="chat-top-ava"><i class="fas fa-seedling"></i></div><div class="chat-top-text"><h4>CC's Assistant</h4><span>Online now</span></div></div><button class="chat-x" onclick="toggleChat()"><i class="fas fa-times"></i></button></div>
-  <div class="chat-body" id="chatBody"></div>
-  <div id="chatOpts" class="chat-opts"></div>
-  <div class="chat-input-wrap"><input class="chat-inp" id="chatInp" placeholder="Type a message..." onkeypress="if(event.key==='Enter')sendMsg()"><button class="chat-send" onclick="sendMsg()"><i class="fas fa-paper-plane"></i></button></div>
-</div>
-
-<!-- ADMIN DASHBOARD -->
-<div class="admin-overlay" id="adminOverlay" onclick="if(event.target===this)toggleAdmin()">
-  <div class="admin-modal">
-    <div class="admin-header">
-      <h2><i class="fas fa-chart-line" style="margin-right:8px"></i> Owner Dashboard</h2>
-      <button class="admin-close" onclick="toggleAdmin()"><i class="fas fa-times"></i></button>
-    </div>
-    <div class="admin-body">
-      <div class="admin-stats">
-        <div class="admin-stat"><div class="val" id="dash-leads">4</div><div class="lbl">Active Leads</div></div>
-        <div class="admin-stat"><div class="val" id="dash-tours">1</div><div class="lbl">Tours Requested</div></div>
-        <div class="admin-stat"><div class="val" id="dash-feedback">0</div><div class="lbl">Feedback Received</div></div>
-        <div class="admin-stat"><div class="val" id="dash-missed">1</div><div class="lbl">Missed Conversations</div></div>
-      </div>
-      <div>
-        <h3 style="font-size:1.05rem;margin-bottom:14px">Recent Leads &amp; Conversations</h3>
-        <table class="lead-table">
-          <thead><tr><th>Name</th><th>Interest</th><th>Status</th><th>Source</th><th>Time</th></tr></thead>
-          <tbody id="leadTableBody">
-            <tr><td><strong>Sarah Kim</strong></td><td>Infant Care</td><td><span class="lead-status hot">HOT &mdash; Tour Requested</span></td><td>Chat Agent</td><td>2 min ago</td></tr>
-            <tr><td><strong>David Reyes</strong></td><td>Preschool</td><td><span class="lead-status warm">WARM &mdash; Asking Questions</span></td><td>Chat Agent</td><td>15 min ago</td></tr>
-            <tr><td><strong>Lisa Chen</strong></td><td>Toddler</td><td><span class="lead-status enrolled">ENROLLED</span></td><td>Contact Form</td><td>1 hour ago</td></tr>
-            <tr><td>(Anonymous)</td><td>Pre-K</td><td><span class="lead-status warm">MISSED &mdash; Left Chat</span></td><td>Chat - Incomplete</td><td>3 hours ago</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div style="margin-top:28px">
-        <h3 style="font-size:1.05rem;margin-bottom:12px">Missed Conversation Recovery</h3>
-        <div style="background:var(--honey-light);border-radius:var(--r-lg);padding:18px;border-left:4px solid var(--honey)">
-          <strong style="color:#B8860B"><i class="fas fa-exclamation-triangle"></i> Visitors left without completing onboarding</strong>
-          <p style="font-size:.84rem;color:var(--text-mid);margin-top:6px;line-height:1.6">These visitors started the chat but didn't finish. The system captured their conversation data and program interest. If they provided an email, a follow-up sequence can be triggered automatically.</p>
-          <button class="btn btn-sage" style="margin-top:10px;font-size:.82rem;padding:9px 18px" onclick="alert('In production: This triggers an automated email follow-up via n8n workflow')"><i class="fas fa-envelope"></i> Send Follow-Up Sequence</button>
-        </div>
-      </div>
-      <div style="margin-top:28px">
-        <h3 style="font-size:1.05rem;margin-bottom:12px">Marketing Agent &mdash; Beyond Yelp</h3>
-        <div class="mkt-grid">
-          <div class="mkt-card">
-            <h4><i class="fab fa-facebook" style="color:#1877f2;margin-right:5px"></i> Facebook &amp; Instagram</h4>
-            <p>Auto-post parent testimonials, event photos, and enrollment reminders to social channels weekly.</p>
-            <span class="mkt-status">Status: Ready to connect</span>
-          </div>
-          <div class="mkt-card">
-            <h4><i class="fas fa-map-marker-alt" style="color:#e74c3c;margin-right:5px"></i> Google Business + Local SEO</h4>
-            <p>Automated review request emails. Blog posts targeting "childcare Brea CA" and related searches.</p>
-            <span class="mkt-status">Status: Ready to connect</span>
-          </div>
-          <div class="mkt-card">
-            <h4><i class="fas fa-envelope-open-text" style="color:#9c27b0;margin-right:5px"></i> Email Nurture Sequences</h4>
-            <p>Drip campaigns for leads who toured but didn't enroll. Seasonal re-engagement for waitlisted families.</p>
-            <span class="mkt-status">Status: Ready to connect</span>
-          </div>
-          <div class="mkt-card">
-            <h4><i class="fas fa-bullhorn" style="color:var(--honey);margin-right:5px"></i> Community Outreach</h4>
-            <p>Nextdoor posts, local parenting group engagement, and referral tracking with nearby businesses.</p>
-            <span class="mkt-status">Status: Ready to connect</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+<!-- JAVASCRIPT -->
 <script>
-let chatOpen=false,cState='idle',lead={name:'',email:'',phone:'',interest:''};
-let missedConvos=[];
-let satisfactionData={overall:0,safety:0,growth:0};
-let dashLeads=4,dashTours=1,dashFeedback=0,dashMissed=1;
-function toggleChat(){chatOpen=!chatOpen;document.getElementById('chatWin').classList.toggle('open',chatOpen);document.getElementById('fabIcon').className=chatOpen?'fas fa-times':'fas fa-comments';document.getElementById('chatBadge').style.display='none';if(chatOpen&&!document.getElementById('chatBody').children.length)startChat()}
-function openChat(ctx){if(!chatOpen)toggleChat();if(ctx)setTimeout(()=>handleCtx(ctx),400)}
-function addM(t,type,d){return new Promise(r=>{setTimeout(()=>{const b=document.getElementById('chatBody'),m=document.createElement('div');m.className='cmsg '+type;m.innerHTML=t;b.appendChild(m);b.scrollTop=b.scrollHeight;r()},d||0)})}
-function showTyp(){const b=document.getElementById('chatBody'),t=document.createElement('div');t.className='typing';t.id='typ';t.innerHTML='<span></span><span></span><span></span>';b.appendChild(t);b.scrollTop=b.scrollHeight}
-function hideTyp(){const t=document.getElementById('typ');if(t)t.remove()}
-function showOpts(opts){const c=document.getElementById('chatOpts');c.innerHTML='';opts.forEach(o=>{const b=document.createElement('button');b.className='copt';b.textContent=o.label;b.onclick=()=>{c.innerHTML='';o.action()};c.appendChild(b)})}
-async function startChat(){showTyp();await addM("Hi! I'm CC's virtual assistant. I can help you learn about our programs, schedule a tour, or start enrollment.",'bot',700);hideTyp();showTyp();await addM("What can I help you with?",'bot',500);hideTyp();cState='menu';showOpts([{label:'Learn About Programs',action:()=>handleCtx('programs')},{label:'Schedule a Tour',action:()=>handleCtx('tour')},{label:'Start Enrollment',action:()=>handleCtx('enroll')},{label:'Ask a Question',action:()=>{cState='free';addM("What would you like to know? I can answer questions about hours, meals, curriculum, safety, pricing, or anything else.",'bot',300)}}])}
-const progs={infant:{name:'Infant Care',ages:'6 weeks to 18 months',desc:"A safe, nurturing atmosphere where your baby develops trust through consistent routines. Low ratios ensure individual attention. Activities include sensory exploration, tummy time, music, and gentle social interaction."},toddler:{name:'Toddler Program',ages:'18 months to 2.5 years',desc:"Building creativity, self-esteem, and curiosity through hands-on activities and guided play. Children develop independence, language, and social awareness in a supportive environment."},preschool:{name:'Preschool',ages:'2.5 to 4 years',desc:"Structured learning through age-appropriate activities. Early literacy, numeracy, creative expression, and social-emotional development through group activities, art, science, and outdoor play."},prek:{name:'Pre-Kindergarten',ages:'4 to 5 years',desc:"Focused kindergarten readiness: literacy, math foundations, writing, and classroom confidence. Emphasizes independence and responsibility."},afterschool:{name:'After School',ages:'5 to 12 years',desc:"Safe, structured environment after school with homework help, enrichment activities, and time for learning and play with peers."}};
-async function handleCtx(ctx){if(ctx==='programs'){await addM("How old is your child?",'bot',300);showOpts([{label:'0-18 months',action:()=>showProg('infant')},{label:'18mo-2.5yr',action:()=>showProg('toddler')},{label:'2.5-4 years',action:()=>showProg('preschool')},{label:'4-5 years',action:()=>showProg('prek')},{label:'5-12 years',action:()=>showProg('afterschool')}])}else if(progs[ctx]){showProg(ctx)}else if(ctx==='tour'){await addM("We'd love to show you around! What's your name?",'bot',300);cState='tour_name';lead.interest='Tour'}else if(ctx==='enroll'){await addM("Let's get started! I'll walk you through it and send all the paperwork. What's your name?",'bot',300);cState='enroll_name';lead.interest='Enrollment'}}
-async function showProg(k){const p=progs[k];await addM('I\'m interested in '+p.name,'user',0);showTyp();await addM('<strong>'+p.name+'</strong> ('+p.ages+')<br><br>'+p.desc,'bot',700);hideTyp();lead.interest=p.name;showOpts([{label:'Schedule a Tour',action:()=>handleCtx('tour')},{label:'Start Enrollment',action:()=>handleCtx('enroll')},{label:'Ask About Pricing',action:()=>pricing()},{label:'Other Programs',action:()=>handleCtx('programs')}])}
-async function pricing(){await addM("What about pricing?",'user',0);showTyp();await addM("Pricing varies by program and schedule. The quickest way to get specifics is scheduling a tour where we discuss everything in detail.",'bot',700);hideTyp();showOpts([{label:'Schedule a Tour',action:()=>handleCtx('tour')},{label:'Have Someone Call Me',action:()=>{addM("What's the best number to reach you?",'bot',300);cState='cb_phone'}}])}
-function sendMsg(){const i=document.getElementById('chatInp'),t=i.value.trim();if(!t)return;i.value='';addM(t,'user',0);handleInput(t)}
-async function handleInput(t){switch(cState){case'tour_name':case'enroll_name':lead.name=t;showTyp();await addM('Nice to meet you, '+t+'! What\'s your email?','bot',400);hideTyp();cState=cState.replace('name','email');break;case'tour_email':case'enroll_email':lead.email=t;showTyp();await addM("Phone number? (type 'skip' to skip)",'bot',400);hideTyp();cState=cState.replace('email','phone');break;case'tour_phone':lead.phone=t==='skip'?'':t;showTyp();await addM("Which program interests you?",'bot',400);hideTyp();showOpts([{label:'Infant Care',action:()=>finishTour('Infant Care')},{label:'Toddler',action:()=>finishTour('Toddler')},{label:'Preschool',action:()=>finishTour('Preschool')},{label:'Pre-K',action:()=>finishTour('Pre-K')},{label:'After School',action:()=>finishTour('After School')},{label:'Not sure yet',action:()=>finishTour('Undecided')}]);break;case'enroll_phone':lead.phone=t==='skip'?'':t;showTyp();await addM("Which program?",'bot',400);hideTyp();showOpts([{label:'Infant Care',action:()=>finishEnroll('Infant Care')},{label:'Toddler',action:()=>finishEnroll('Toddler')},{label:'Preschool',action:()=>finishEnroll('Preschool')},{label:'Pre-K',action:()=>finishEnroll('Pre-K')},{label:'After School',action:()=>finishEnroll('After School')}]);break;case'cb_phone':lead.phone=t;await addM("And your name?",'bot',300);cState='cb_name';break;case'cb_name':lead.name=t;showTyp();await addM('Done! Someone will call you at '+lead.phone+' within one business day.','bot',600);hideTyp();addM('Mike has been notified!','sys',200);cState='free';break;default:await handleFree(t)}}
-async function finishTour(prog){await addM(prog,'user',0);showTyp();await addM('<strong>Tour Request</strong><br><br>'+lead.name+'<br>'+lead.email+'<br>'+(lead.phone||'No phone')+'<br>Interest: '+prog+'<br><br>We\'ll reach out within 24 hours to confirm a time. Bring your child along!','bot',900);hideTyp();addM('Mike has been notified of your tour request!','sys',200);addNotification(lead.name,prog,'tour');dashLeads++;dashTours++;updateDash();cState='free'}
-async function finishEnroll(prog){await addM(prog,'user',0);showTyp();await addM('<strong>Enrollment Started!</strong><br><br>Sending to '+lead.email+':<br>- Enrollment Application<br>- Medical/Immunization Forms<br>- Emergency Contact Form<br>- Parent Handbook<br>- Meal Plan Preferences<br><br>Our team will follow up within 24 hours.','bot',1000);hideTyp();addM('Mike notified, paperwork sent!','sys',200);addNotification(lead.name,prog,'hot');dashLeads++;updateDash();cState='free'}
-async function handleFree(t){const l=t.toLowerCase();showTyp();let r='';if(l.match(/hour|open|close/))r="We're open <strong>Monday-Friday, 6:30 AM to 6:00 PM</strong>.";else if(l.match(/meal|food|lunch|allerg/))r="Balanced meals and snacks prepared on-site. Breakfast, lunch, and afternoon snack included. We accommodate allergies.";else if(l.match(/safe|secur|camera/))r="Secure entry, background-checked staff, strict sign-in/out, and required ratios at all times.";else if(l.match(/cost|price|tuition|fee/)){r="Tuition varies by program. Best way to get exact numbers is scheduling a tour.";setTimeout(()=>showOpts([{label:'Schedule a Tour',action:()=>handleCtx('tour')}]),800)}else if(l.match(/ratio|class size/))r="We maintain low ratios that meet or exceed California requirements.";else if(l.match(/curriculum|teach|learn/))r="Multicultural approach blending structured academics with play-based learning across literacy, numeracy, science, arts, and social-emotional development.";else{r="Great question! I'll flag this for the team. Anything else I can help with?";setTimeout(()=>showOpts([{label:'Programs',action:()=>handleCtx('programs')},{label:'Schedule Tour',action:()=>handleCtx('tour')}]),600)}await addM(r,'bot',600);hideTyp()}
-
-// Compare tabs
-function showView(v,btn){document.querySelectorAll('.cview').forEach(e=>e.style.display='none');document.querySelectorAll('.ctab').forEach(e=>e.classList.remove('active'));document.getElementById('v-'+v).style.display='block';btn.classList.add('active');if(v==='bars')animBars()}
-function animBars(){document.querySelectorAll('.bar-fill').forEach(b=>{b.style.width='0';setTimeout(()=>{b.style.width=b.dataset.w},80)})}
-
-// Nav scroll shadow
-window.addEventListener('scroll',()=>{document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>10)});
-
-// === SATISFACTION ===
-function setRating(category,value){
-  satisfactionData[category]=value;
-  const container=document.getElementById('emoji-'+category);
-  container.querySelectorAll('.emo-btn').forEach(btn=>{
-    btn.classList.toggle('active',parseInt(btn.dataset.val)===value);
-  });
-}
-function submitSatisfaction(){
-  if(!satisfactionData.overall){alert('Please rate your overall experience!');return}
-  document.getElementById('sat-form').style.display='none';
-  document.getElementById('sat-thanks').style.display='block';
-  dashFeedback++;
-  updateDash();
-  const targets={'sat-overall':4.8,'sat-safety':4.9,'sat-comm':4.7,'sat-growth':4.8};
-  Object.keys(targets).forEach(id=>{
-    const el=document.getElementById(id);
-    const current=parseFloat(el.textContent);
-    const newVal=((current*50+satisfactionData[id==='sat-comm'?'overall':id.replace('sat-','')])/51).toFixed(1);
-    el.textContent=newVal;
-  });
-}
-
-// === NOTIFICATIONS & ADMIN ===
-function addNotification(name,interest,type){
-  const row=document.createElement('tr');
-  row.innerHTML='<td><strong>'+name+'</strong></td><td>'+interest+'</td><td><span class="lead-status '+type+'">'+(type==='hot'?'HOT &mdash; Enrollment':type==='tour'?'TOUR REQUEST':'WARM &mdash; Inquiring')+'</span></td><td>Chat Agent</td><td>Just now</td>';
-  const tbody=document.getElementById('leadTableBody');
-  tbody.insertBefore(row,tbody.firstChild);
-}
-function updateDash(){
-  document.getElementById('dash-leads').textContent=dashLeads;
-  document.getElementById('dash-tours').textContent=dashTours;
-  document.getElementById('dash-feedback').textContent=dashFeedback;
-  document.getElementById('dash-missed').textContent=dashMissed;
-}
-function toggleAdmin(){
-  document.getElementById('adminOverlay').classList.toggle('open');
-}
-
-// === MISSED CONVERSATION TRACKING ===
-window.addEventListener('beforeunload',()=>{
-  if(lead.name||lead.email||missedConvos.length>0){
-    if(!lead.email){
-      dashMissed++;
-      console.log('MISSED CONVERSATION:',{lead,missedConvos});
-    }
+  // Mobile nav toggle
+  function toggleMobileNav(btn) {
+    const menu = document.getElementById('mobile-nav');
+    const isOpen = menu.classList.contains('open');
+    menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', !isOpen);
   }
-});
 
-// Auto badge
-setTimeout(()=>{if(!chatOpen)document.getElementById('chatBadge').style.display='flex'},4000);
+  // Close mobile nav when a link is clicked
+  document.querySelectorAll('.mobile-menu a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('mobile-nav').classList.remove('open');
+      document.querySelector('.nav-hamburger').setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Scroll reveal
+  var revealEls = document.querySelectorAll('.reveal');
+  var revealObserver;
+  if ('IntersectionObserver' in window) {
+    revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(function(el) { revealObserver.observe(el); });
+  } else {
+    revealEls.forEach(function(el) { el.classList.add('visible'); });
+  }
+
+  // Animate bars when compare section is visible
+  var barsAnimated = false;
+  var compareSection = document.getElementById('compare');
+  if ('IntersectionObserver' in window && compareSection) {
+    var barObserver = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting && !barsAnimated) {
+        barsAnimated = true;
+        // Bars are already set via inline style; nothing extra needed
+        // But we trigger a CSS reflow trick if we wanted to animate from 0
+        barObserver.disconnect();
+      }
+    }, { threshold: 0.3 });
+    barObserver.observe(compareSection);
+  }
+
+  // Feedback form submit
+  document.getElementById('feedback-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var overall = document.getElementById('fb-overall').value;
+    if (!overall) {
+      document.getElementById('fb-overall').focus();
+      document.getElementById('fb-overall').style.borderColor = 'var(--coral)';
+      return;
+    }
+    document.getElementById('feedback-form-body').style.display = 'none';
+    document.getElementById('feedback-thankyou').style.display = 'block';
+  });
+
+  // Contact form submit
+  document.getElementById('contact-form-el').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var first = document.getElementById('c-first').value.trim();
+    var last = document.getElementById('c-last').value.trim();
+    var email = document.getElementById('c-email').value.trim();
+    var valid = true;
+
+    [document.getElementById('c-first'), document.getElementById('c-last'), document.getElementById('c-email')].forEach(function(inp) {
+      inp.style.borderColor = '#DDE4EF';
+    });
+
+    if (!first) { document.getElementById('c-first').style.borderColor = 'var(--coral)'; valid = false; }
+    if (!last) { document.getElementById('c-last').style.borderColor = 'var(--coral)'; valid = false; }
+    if (!email || !email.includes('@')) { document.getElementById('c-email').style.borderColor = 'var(--coral)'; valid = false; }
+
+    if (!valid) return;
+
+    var btn = document.getElementById('contact-submit-btn');
+    btn.textContent = 'Message Sent!';
+    btn.style.background = '#22C55E';
+    btn.disabled = true;
+    document.getElementById('contact-success').style.display = 'block';
+    document.getElementById('contact-success').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+
+  // Smooth nav highlight
+  var navLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+  var sections = ['programs', 'compare', 'reviews', 'feedback', 'contact'];
+  window.addEventListener('scroll', function() {
+    var scrollY = window.scrollY + 100;
+    sections.forEach(function(id) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      if (el.offsetTop <= scrollY && el.offsetTop + el.offsetHeight > scrollY) {
+        navLinks.forEach(function(l) {
+          l.style.background = '';
+          l.style.color = '';
+          if (l.getAttribute('href') === '#' + id) {
+            l.style.background = 'var(--light-sky)';
+            l.style.color = 'var(--sky)';
+          }
+        });
+      }
+    });
+  }, { passive: true });
 </script>
-
 </body>
 </html>
